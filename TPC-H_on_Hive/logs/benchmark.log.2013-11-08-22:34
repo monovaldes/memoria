@@ -1,0 +1,189 @@
+Running Hive from /opt/hive-0.12.0
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+13/11/08 22:32:10 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 22:32:10 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 22:32:10 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 22:32:10 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 22:32:10 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 22:32:10 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 22:32:10 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.606 seconds
+OK
+Time taken: 0.212 seconds
+OK
+Time taken: 0.202 seconds
+OK
+Time taken: 0.057 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 814
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1383960265354_0002, Tracking URL = http://hadoop11:8088/proxy/application_1383960265354_0002/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1383960265354_0002
+java.io.IOException: java.net.ConnectException: Call From hadoop10/10.6.40.110 to hadoop11:10020 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at org.apache.hadoop.mapred.ClientServiceDelegate.invoke(ClientServiceDelegate.java:331)
+	at org.apache.hadoop.mapred.ClientServiceDelegate.getJobStatus(ClientServiceDelegate.java:416)
+	at org.apache.hadoop.mapred.YARNRunner.getJobStatus(YARNRunner.java:522)
+	at org.apache.hadoop.mapreduce.Job$1.run(Job.java:314)
+	at org.apache.hadoop.mapreduce.Job$1.run(Job.java:311)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:311)
+	at org.apache.hadoop.mapreduce.Job.getJobState(Job.java:347)
+	at org.apache.hadoop.mapred.JobClient$NetworkedJob.getJobState(JobClient.java:295)
+	at org.apache.hadoop.hive.shims.HadoopShimsSecure.isJobPreparing(HadoopShimsSecure.java:101)
+	at org.apache.hadoop.hive.ql.exec.mr.HadoopJobExecHelper.progress(HadoopJobExecHelper.java:241)
+	at org.apache.hadoop.hive.ql.exec.mr.HadoopJobExecHelper.progress(HadoopJobExecHelper.java:535)
+	at org.apache.hadoop.hive.ql.exec.mr.ExecDriver.execute(ExecDriver.java:431)
+	at org.apache.hadoop.hive.ql.exec.mr.MapRedTask.execute(MapRedTask.java:144)
+	at org.apache.hadoop.hive.ql.exec.Task.executeTask(Task.java:151)
+	at org.apache.hadoop.hive.ql.exec.TaskRunner.runSequential(TaskRunner.java:65)
+	at org.apache.hadoop.hive.ql.Driver.launchTask(Driver.java:1414)
+	at org.apache.hadoop.hive.ql.Driver.execute(Driver.java:1192)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1020)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:888)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:259)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:216)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:413)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:348)
+	at org.apache.hadoop.hive.cli.CliDriver.processReader(CliDriver.java:446)
+	at org.apache.hadoop.hive.cli.CliDriver.processFile(CliDriver.java:456)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:737)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:675)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: java.net.ConnectException: Call From hadoop10/10.6.40.110 to hadoop11:10020 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:783)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:730)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1351)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1300)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:206)
+	at com.sun.proxy.$Proxy24.getJobReport(Unknown Source)
+	at org.apache.hadoop.mapreduce.v2.api.impl.pb.client.MRClientProtocolPBClientImpl.getJobReport(MRClientProtocolPBClientImpl.java:133)
+	at sun.reflect.GeneratedMethodAccessor144.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.mapred.ClientServiceDelegate.invoke(ClientServiceDelegate.java:317)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:735)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:547)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:642)
+	at org.apache.hadoop.ipc.Client$Connection.access$2600(Client.java:314)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1399)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1318)
+	... 43 more
+Ended Job = job_1383960265354_0002 with exception 'java.io.IOException(java.net.ConnectException: Call From hadoop10/10.6.40.110 to hadoop11:10020 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused)'
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+Command exited with non-zero status 1
+Time:109.77
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+13/11/08 22:34:00 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 22:34:00 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 22:34:00 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 22:34:00 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 22:34:00 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 22:34:00 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 22:34:00 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.656 seconds
+OK
+Time taken: 0.107 seconds
+OK
+Time taken: 0.133 seconds
+OK
+Time taken: 0.14 seconds
+OK
+Time taken: 0.099 seconds
+OK
+Time taken: 0.225 seconds
+OK
+Time taken: 0.121 seconds
+OK
+Time taken: 0.133 seconds
+OK
+Time taken: 0.188 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.039 seconds
+OK
+Time taken: 0.036 seconds
+OK
+Time taken: 0.039 seconds
+OK
+Time taken: 0.092 seconds
+OK
+Time taken: 0.049 seconds
+OK
+Time taken: 0.051 seconds
+Total MapReduce jobs = 10
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+13/11/08 22:34:15 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+13/11/08 22:34:15 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-08_22-34-09_539_6819370651013627920-1/-local-10020/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+13/11/08 22:34:15 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-08_22-34-09_539_6819370651013627920-1/-local-10020/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+13/11/08 22:34:15 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 22:34:15 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 22:34:15 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 22:34:15 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 22:34:15 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 22:34:15 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 22:34:15 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+Running Hive query: tpch/q3_shipping_priority.hive
+Running Hive query: tpch/q4_order_priority.hive
+Running Hive query: tpch/q5_local_supplier_volume.hive
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+Running Hive query: tpch/q7_volume_shipping.hive
+Running Hive query: tpch/q8_national_market_share.hive
+Running Hive query: tpch/q9_product_type_profit.hive
+Running Hive query: tpch/q10_returned_item.hive
+Running Hive query: tpch/q11_important_stock.hive
+Running Hive query: tpch/q12_shipping.hive
+Running Hive query: tpch/q13_customer_distribution.hive
+Running Hive query: tpch/q14_promotion_effect.hive
+Running Hive query: tpch/q15_top_supplier.hive
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+Running Hive query: tpch/q18_large_volume_customer.hive
+Running Hive query: tpch/q19_discounted_revenue.hive
+Running Hive query: tpch/q20_potential_part_promotion.hive
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+Running Hive query: tpch/q22_global_sales_opportunity.hive

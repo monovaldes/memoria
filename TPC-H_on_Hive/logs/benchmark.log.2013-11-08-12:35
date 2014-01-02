@@ -1,0 +1,46 @@
+Running Hive from 
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q3_shipping_priority.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q4_order_priority.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q5_local_supplier_volume.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q7_volume_shipping.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q8_national_market_share.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q9_product_type_profit.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q10_returned_item.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q11_important_stock.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q12_shipping.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q13_customer_distribution.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q14_promotion_effect.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q15_top_supplier.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q18_large_volume_customer.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q19_discounted_revenue.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q20_potential_part_promotion.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory
+Running Hive query: tpch/q22_global_sales_opportunity.hive
+./tpch_benchmark.sh: line 29: /usr/bin/time: No such file or directory

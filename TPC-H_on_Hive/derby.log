@@ -1,0 +1,86 @@
+----------------------------------------------------------------
+2013-12-10 07:54:13.428 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance a816c00e-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/metastore_db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2013-12-10 07:54:20.570 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 8ca44062-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:54:20.633 GMT:
+Shutting down instance 8ca44062-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2013-12-10 07:55:15.147 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance ed07c066-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:55:15.324 GMT:
+Shutting down instance ed07c066-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2013-12-10 07:55:15.882 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 2589c06b-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:55:15.949 GMT:
+Shutting down instance 2589c06b-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2013-12-10 07:55:39.742 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 65f6406f-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:55:39.923 GMT:
+Shutting down instance 65f6406f-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2013-12-10 07:55:40.426 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 5e838074-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:55:40.490 GMT:
+Shutting down instance 5e838074-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2013-12-10 07:57:54.676 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance bef90078-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:57:54.828 GMT:
+Shutting down instance bef90078-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2013-12-10 07:59:35.723 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance c791807d-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:59:35.793 GMT:
+Shutting down instance c791807d-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2013-12-10 07:59:53.717 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 88100081-0142-db7f-c4aa-0000072dfbb8
+on database directory /opt/TPC/TPC-H_on_Hive/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2013-12-10 07:59:53.867 GMT:
+Shutting down instance 88100081-0142-db7f-c4aa-0000072dfbb8
+----------------------------------------------------------------

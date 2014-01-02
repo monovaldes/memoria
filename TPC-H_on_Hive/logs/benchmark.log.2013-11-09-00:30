@@ -1,0 +1,113 @@
+Running Hive from /opt/hive-0.12.0
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+13/11/09 00:29:28 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/09 00:29:28 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/09 00:29:28 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/09 00:29:28 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/09 00:29:28 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/09 00:29:28 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/09 00:29:28 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.563 seconds
+OK
+Time taken: 0.276 seconds
+OK
+Time taken: 0.233 seconds
+OK
+Time taken: 0.081 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 814
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1383967247789_0001, Tracking URL = http://hadoop11:8088/proxy/application_1383967247789_0001/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1383967247789_0001
+Hadoop job information for Stage-1: number of mappers: 3032; number of reducers: 814
+2013-11-09 00:30:17,111 Stage-1 map = 0%,  reduce = 0%
+Ended Job = job_1383967247789_0001 with errors
+Error during job, obtaining debugging information...
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 3032  Reduce: 814   FAIL
+Total MapReduce CPU Time Spent: -1 msec
+Command exited with non-zero status 2
+Time:50.57
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+13/11/09 00:30:18 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/09 00:30:18 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/09 00:30:18 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/09 00:30:18 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/09 00:30:18 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/09 00:30:18 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/09 00:30:18 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.623 seconds
+OK
+Time taken: 0.123 seconds
+OK
+Time taken: 0.115 seconds
+OK
+Time taken: 0.107 seconds
+OK
+Time taken: 0.091 seconds
+OK
+Time taken: 0.223 seconds
+OK
+Time taken: 0.122 seconds
+OK
+Time taken: 0.123 seconds
+OK
+Time taken: 0.199 seconds
+OK
+Time taken: 0.032 seconds
+OK
+Time taken: 0.032 seconds
+OK
+Time taken: 0.035 seconds
+OK
+Time taken: 0.038 seconds
+OK
+Time taken: 0.1 seconds
+OK
+Time taken: 0.04 seconds
+OK
+Time taken: 0.043 seconds
+Running Hive query: tpch/q3_shipping_priority.hive
+Running Hive query: tpch/q4_order_priority.hive
+Running Hive query: tpch/q5_local_supplier_volume.hive
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+Running Hive query: tpch/q7_volume_shipping.hive
+Running Hive query: tpch/q8_national_market_share.hive
+Running Hive query: tpch/q9_product_type_profit.hive
+Running Hive query: tpch/q10_returned_item.hive
+Running Hive query: tpch/q11_important_stock.hive
+Running Hive query: tpch/q12_shipping.hive
+Running Hive query: tpch/q13_customer_distribution.hive
+Running Hive query: tpch/q14_promotion_effect.hive
+Running Hive query: tpch/q15_top_supplier.hive
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+Running Hive query: tpch/q18_large_volume_customer.hive
+Running Hive query: tpch/q19_discounted_revenue.hive
+Running Hive query: tpch/q20_potential_part_promotion.hive
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+Running Hive query: tpch/q22_global_sales_opportunity.hive

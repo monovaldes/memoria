@@ -1,0 +1,112 @@
+Running Hive from 
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.01
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q3_shipping_priority.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q4_order_priority.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q5_local_supplier_volume.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q7_volume_shipping.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q8_national_market_share.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q9_product_type_profit.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q10_returned_item.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q11_important_stock.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q12_shipping.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q13_customer_distribution.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q14_promotion_effect.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q15_top_supplier.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.01
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q18_large_volume_customer.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q19_discounted_revenue.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q20_potential_part_promotion.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00
+Running Hive query: tpch/q22_global_sales_opportunity.hive
+/bin/hive: line 26: /bin/hive-config.sh: No such file or directory
+Missing Hive Execution Jar: /lib/hive-exec-*.jar
+Command exited with non-zero status 1
+Time:0.00

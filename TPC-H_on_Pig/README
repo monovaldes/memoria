@@ -1,0 +1,44 @@
+TPC-H Benchmark
+===============
+TPC-H is an ad-hoc, decision support benchmark.
+
+http://www.tpc.org/tpch/
+
+Data
+===============
+The data is generated using the DBGEN software on TPC-H website. See README in the DBGEN install package on details of how to generate the dataset. 
+
+Each table should be put on HDFS under a separate sub-directory.
+
+Scripts
+=============
+All TPC-H scripts are under queries. Q<x>.poor.pig and Q<x>.poorer.pig were written in our early project and have been rewritten to Q<x>.pig.
+
+Run Benchmark
+=============
+./run_tpch.sh input_dir output_dir reducers [hadoop_opts]
+
+where:
+   input_dir:   The input directory on HDFS
+   output_dir:  The output directory on HDFS
+   reducers:    The number of reduce tasks to use per MapReduce job
+   hadoop_opts: Optional Hadoop options (-conf or -D)
+
+Tip: You can get the tab-separated timings using:
+>$ grep "times (sec)" out.log
+
+
+Run Individual Scripts
+======================
+${PIG_HOME}/bin/pig $hadoop_opts -param input=<input_dir> -param output=<output_dir> -param reducers=<reducers> -f queries/<script_name>
+
+where:
+   input_dir:  The TPC-H input directory on the DFS
+   output_dir: The output directory on the DFS
+   reducers:   The number of reduce tasks to user per MapReduce job
+   <script_name>: One of the Q<X>.pig script in the scripts dir
+
+Contact
+======================
+Jie Li <jieli@cs.duke.edu>
+Pig JIRA at https://issues.apache.org/jira/browse/PIG-2397

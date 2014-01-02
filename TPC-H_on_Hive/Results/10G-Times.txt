@@ -1,0 +1,55 @@
+***********************************************
+*           PC-H benchmark on Hive            *
+***********************************************
+
+Running Hive from /opt/hive-0.12.0
+Running Hadoop from
+See benchmark.log for more details of query errors.
+
+Executing Trial #1 of 1 trial(s)...
+Running Hive query: tpch/q1_pricing_summary_report.hive
+Time:86.44
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+Time:172.74
+Running Hive query: tpch/q3_shipping_priority.hive
+Time:147.57
+Running Hive query: tpch/q4_order_priority.hive
+Time:151.59
+Running Hive query: tpch/q5_local_supplier_volume.hive
+Time:283.30
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+Time:50.33
+Running Hive query: tpch/q7_volume_shipping.hive
+Time:411.64
+Running Hive query: tpch/q8_national_market_share.hive
+Time:292.10
+Running Hive query: tpch/q9_product_type_profit.hive
+Time:593.15
+Running Hive query: tpch/q10_returned_item.hive
+Time:176.29
+Running Hive query: tpch/q11_important_stock.hive
+Time:123.91
+Running Hive query: tpch/q12_shipping.hive
+Time:106.34
+Running Hive query: tpch/q13_customer_distribution.hive
+Time:130.48
+Running Hive query: tpch/q14_promotion_effect.hive
+Time:73.98
+Running Hive query: tpch/q15_top_supplier.hive
+Time:95.75
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+Time:158.72
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+Time:218.82
+Running Hive query: tpch/q18_large_volume_customer.hive
+Time:262.07
+Running Hive query: tpch/q19_discounted_revenue.hive
+Time:162.10
+Running Hive query: tpch/q20_potential_part_promotion.hive
+Time:210.73
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+Time:448.11
+Running Hive query: tpch/q22_global_sales_opportunity.hive
+Time:154.82
+***********************************************
+

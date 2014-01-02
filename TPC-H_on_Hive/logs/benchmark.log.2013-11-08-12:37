@@ -1,0 +1,1256 @@
+Running Hive from /opt/hive-0.12.0
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+13/11/08 12:37:18 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:18 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:18 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:18 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:18 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:18 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:18 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:19 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.62
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+13/11/08 12:37:20 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:20 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:20 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:20 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:20 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:20 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:20 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:20 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.58
+Running Hive query: tpch/q3_shipping_priority.hive
+13/11/08 12:37:21 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:21 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:21 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:21 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:21 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:21 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:21 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:22 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.56
+Running Hive query: tpch/q4_order_priority.hive
+13/11/08 12:37:23 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:23 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:23 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:23 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:23 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:23 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:23 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:23 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.63
+Running Hive query: tpch/q5_local_supplier_volume.hive
+13/11/08 12:37:25 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:25 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:25 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:25 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:25 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:25 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:25 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:25 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.55
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+13/11/08 12:37:26 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:26 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:26 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:26 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:26 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:26 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:26 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:27 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.55
+Running Hive query: tpch/q7_volume_shipping.hive
+13/11/08 12:37:28 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:28 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:28 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:28 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:28 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:28 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:28 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:28 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.59
+Running Hive query: tpch/q8_national_market_share.hive
+13/11/08 12:37:29 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:29 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:29 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:29 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:29 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:29 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:29 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:30 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.55
+Running Hive query: tpch/q9_product_type_profit.hive
+13/11/08 12:37:31 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:31 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:31 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:31 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:31 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:31 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:31 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:31 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.56
+Running Hive query: tpch/q10_returned_item.hive
+13/11/08 12:37:33 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:33 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:33 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:33 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:33 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:33 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:33 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:33 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.57
+Running Hive query: tpch/q11_important_stock.hive
+13/11/08 12:37:34 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:34 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:34 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:34 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:34 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:34 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:34 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:34 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.53
+Running Hive query: tpch/q12_shipping.hive
+13/11/08 12:37:36 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:36 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:36 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:36 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:36 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:36 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:36 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:36 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.57
+Running Hive query: tpch/q13_customer_distribution.hive
+13/11/08 12:37:37 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:37 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:37 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:37 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:37 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:37 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:37 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:38 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.59
+Running Hive query: tpch/q14_promotion_effect.hive
+13/11/08 12:37:39 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:39 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:39 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:39 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:39 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:39 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:39 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:39 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.56
+Running Hive query: tpch/q15_top_supplier.hive
+13/11/08 12:37:40 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:40 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:40 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:40 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:40 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:40 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:40 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:41 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.54
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+13/11/08 12:37:42 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:42 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:42 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:42 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:42 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:42 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:42 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:42 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.59
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+13/11/08 12:37:44 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:44 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:44 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:44 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:44 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:44 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:44 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:44 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.56
+Running Hive query: tpch/q18_large_volume_customer.hive
+13/11/08 12:37:45 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:45 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:45 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:45 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:45 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:45 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:45 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:45 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.56
+Running Hive query: tpch/q19_discounted_revenue.hive
+13/11/08 12:37:47 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:47 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:47 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:47 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:47 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:47 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:47 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:47 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.60
+Running Hive query: tpch/q20_potential_part_promotion.hive
+13/11/08 12:37:48 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:48 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:48 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:48 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:48 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:48 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:48 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:49 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.53
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+13/11/08 12:37:50 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:50 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:50 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:50 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:50 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:50 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:50 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:50 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.60
+Running Hive query: tpch/q22_global_sales_opportunity.hive
+13/11/08 12:37:51 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:37:51 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:37:51 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:37:51 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:37:51 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:37:51 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:37:51 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+[Fatal Error] hive-site.xml:2000:16: The element type "value" must be terminated by the matching end-tag "</value>".
+13/11/08 12:37:52 FATAL conf.Configuration: error parsing conf file:/opt/hive-0.12.0/conf/hive-site.xml
+org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Exception in thread "main" java.lang.RuntimeException: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2152)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2011)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1918)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:893)
+	at org.apache.hadoop.hive.conf.HiveConf.initialize(HiveConf.java:1141)
+	at org.apache.hadoop.hive.conf.HiveConf.<init>(HiveConf.java:1087)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4jCommon(LogUtils.java:74)
+	at org.apache.hadoop.hive.common.LogUtils.initHiveLog4j(LogUtils.java:58)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:630)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:614)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: org.xml.sax.SAXParseException; systemId: file:/opt/hive-0.12.0/conf/hive-site.xml; lineNumber: 2000; columnNumber: 16; The element type "value" must be terminated by the matching end-tag "</value>".
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:256)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:150)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1989)
+	at org.apache.hadoop.conf.Configuration.parse(Configuration.java:1977)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2045)
+	... 14 more
+Command exited with non-zero status 1
+Time:1.56

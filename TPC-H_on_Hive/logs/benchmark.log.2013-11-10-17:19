@@ -1,0 +1,372 @@
+Running Hive from /opt/hive-0.12.0
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+13/11/10 16:11:03 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/10 16:11:03 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/10 16:11:03 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/10 16:11:03 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/10 16:11:03 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/10 16:11:03 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/10 16:11:03 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.086 seconds
+OK
+Time taken: 0.269 seconds
+OK
+Time taken: 0.272 seconds
+OK
+Time taken: 0.089 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 814
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384110409168_0001, Tracking URL = http://hadoop11:8088/proxy/application_1384110409168_0001/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384110409168_0001
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2013-11-10 16:36:51,987 Stage-1 map = 0%,  reduce = 0%
+Ended Job = job_1384110409168_0001 with errors
+Error during job, obtaining debugging information...
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 FAIL
+Total MapReduce CPU Time Spent: 0 msec
+Command exited with non-zero status 2
+Time:1549.60
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+13/11/10 16:36:53 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/10 16:36:53 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/10 16:36:53 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/10 16:36:53 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/10 16:36:53 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/10 16:36:53 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/10 16:36:53 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.733 seconds
+OK
+Time taken: 0.105 seconds
+OK
+Time taken: 0.102 seconds
+OK
+Time taken: 0.106 seconds
+OK
+Time taken: 0.101 seconds
+OK
+Time taken: 0.191 seconds
+OK
+Time taken: 0.102 seconds
+OK
+Time taken: 0.109 seconds
+OK
+Time taken: 0.215 seconds
+OK
+Time taken: 0.031 seconds
+OK
+Time taken: 0.033 seconds
+OK
+Time taken: 0.034 seconds
+OK
+Time taken: 0.032 seconds
+OK
+Time taken: 0.109 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.058 seconds
+Total MapReduce jobs = 10
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+13/11/10 16:37:09 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+13/11/10 16:37:09 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-10_16-37-02_728_2296597611778263944-1/-local-10020/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+13/11/10 16:37:09 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-10_16-37-02_728_2296597611778263944-1/-local-10020/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+13/11/10 16:37:09 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/10 16:37:09 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/10 16:37:09 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/10 16:37:09 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/10 16:37:09 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/10 16:37:09 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/10 16:37:09 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+Execution log at: /tmp/hadoop/.log
+2013-11-10 04:37:10	Starting to launch local task to process map join;	maximum memory = 477102080
+2013-11-10 04:37:11	Dump the side-table into file: file:/tmp/hadoop/hive_2013-11-10_16-37-02_728_2296597611778263944-1/-local-10017/HashTable-Stage-18/MapJoin-mapfile61--.hashtable
+2013-11-10 04:37:11	Upload 1 File to: file:/tmp/hadoop/hive_2013-11-10_16-37-02_728_2296597611778263944-1/-local-10017/HashTable-Stage-18/MapJoin-mapfile61--.hashtable
+2013-11-10 04:37:11	End of local task; Time Taken: 0.961 sec.
+Execution completed successfully
+Mapred Local Task Succeeded . Convert the Join into MapJoin
+Mapred Local Task Succeeded . Convert the Join into MapJoin
+Launching Job 1 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1384110409168_0002, Tracking URL = http://hadoop11:8088/proxy/application_1384110409168_0002/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384110409168_0002
+Hadoop job information for Stage-18: number of mappers: 1; number of reducers: 0
+2013-11-10 16:37:58,182 Stage-18 map = 100%,  reduce = 0%, Cumulative CPU 1.21 sec
+MapReduce Total cumulative CPU time: 1 seconds 210 msec
+Ended Job = job_1384110409168_0002
+Stage-23 is filtered out by condition resolver.
+Stage-24 is filtered out by condition resolver.
+Stage-1 is selected by condition resolver.
+Launching Job 2 out of 10
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384110409168_0003, Tracking URL = http://hadoop11:8088/proxy/application_1384110409168_0003/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384110409168_0003
+Hadoop job information for Stage-1: number of mappers: 10; number of reducers: 2
+2013-11-10 16:45:00,433 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 228.54 sec
+MapReduce Total cumulative CPU time: 3 minutes 48 seconds 540 msec
+Ended Job = job_1384110409168_0003
+Stage-21 is filtered out by condition resolver.
+Stage-22 is filtered out by condition resolver.
+Stage-2 is selected by condition resolver.
+Launching Job 3 out of 10
+Number of reduce tasks not specified. Estimated from input data size: 125
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384110409168_0004, Tracking URL = http://hadoop11:8088/proxy/application_1384110409168_0004/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384110409168_0004
+Hadoop job information for Stage-2: number of mappers: 464; number of reducers: 125
+2013-11-10 16:59:14,525 Stage-2 map = 19%,  reduce = 0%
+Ended Job = job_1384110409168_0004 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1384110409168_0004_m_000453 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_r_000009 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_r_000014 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000001 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000185 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000107 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000278 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000006 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000232 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000238 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000303 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000282 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000288 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000428 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000448 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000462 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000407 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000033 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_r_000004 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000034 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000071 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000043 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000005 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000171 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000196 (and more) from job job_1384110409168_0004
+Examining task ID: task_1384110409168_0004_m_000014 (and more) from job job_1384110409168_0004
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1384110409168_0004_m_000044
+
+URL:
+  http://hadoop11:8088/taskdetails.jsp?jobid=job_1384110409168_0004&tipid=task_1384110409168_0004_m_000044
+-----
+Diagnostic Messages for this Task:
+Error: unable to create new native thread
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 1   Cumulative CPU: 1.21 sec   HDFS Read: 2421 HDFS Write: 231 SUCCESS
+Job 1: Map: 10  Reduce: 2   Cumulative CPU: 228.54 sec   HDFS Read: 1438700365 HDFS Write: 328055283 SUCCESS
+Job 2: Map: 464  Reduce: 125   FAIL
+Total MapReduce CPU Time Spent: 3 minutes 49 seconds 749 msec
+Command exited with non-zero status 2
+Time:1342.79
+Running Hive query: tpch/q3_shipping_priority.hive
+13/11/10 16:59:16 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/10 16:59:16 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/10 16:59:16 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/10 16:59:16 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/10 16:59:16 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/10 16:59:16 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/10 16:59:16 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.732 seconds
+OK
+Time taken: 0.122 seconds
+OK
+Time taken: 0.115 seconds
+OK
+Time taken: 0.162 seconds
+OK
+Time taken: 0.239 seconds
+OK
+Time taken: 0.048 seconds
+OK
+Time taken: 0.045 seconds
+OK
+Time taken: 0.053 seconds
+Total MapReduce jobs = 6
+Stage-1 is selected by condition resolver.
+Launching Job 1 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 201
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384110409168_0005, Tracking URL = http://hadoop11:8088/proxy/application_1384110409168_0005/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384110409168_0005
+Hadoop job information for Stage-1: number of mappers: 768; number of reducers: 201
+2013-11-10 17:19:18,280 Stage-1 map = 6%,  reduce = 0%
+Ended Job = job_1384110409168_0005 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1384110409168_0005_m_000552 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000121 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000010 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000035 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000172 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000102 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000372 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000327 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000397 (and more) from job job_1384110409168_0005
+Examining task ID: task_1384110409168_0005_m_000447 (and more) from job job_1384110409168_0005
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1384110409168_0005_m_000121
+
+URL:
+  http://hadoop11:8088/taskdetails.jsp?jobid=job_1384110409168_0005&tipid=task_1384110409168_0005_m_000121
+-----
+Diagnostic Messages for this Task:
+Error: java.io.IOException: java.lang.reflect.InvocationTargetException
+	at org.apache.hadoop.hive.io.HiveIOExceptionHandlerChain.handleRecordReaderCreationException(HiveIOExceptionHandlerChain.java:97)
+	at org.apache.hadoop.hive.io.HiveIOExceptionHandlerUtil.handleRecordReaderCreationException(HiveIOExceptionHandlerUtil.java:57)
+	at org.apache.hadoop.hive.shims.HadoopShimsSecure$CombineFileRecordReader.initNextRecordReader(HadoopShimsSecure.java:343)
+	at org.apache.hadoop.hive.shims.HadoopShimsSecure$CombineFileRecordReader.next(HadoopShimsSecure.java:222)
+	at org.apache.hadoop.mapred.MapTask$TrackedRecordReader.moveToNext(MapTask.java:197)
+	at org.apache.hadoop.mapred.MapTask$TrackedRecordReader.next(MapTask.java:183)
+	at org.apache.hadoop.mapred.MapRunner.run(MapRunner.java:52)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:429)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:162)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1491)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:157)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.hive.shims.HadoopShimsSecure$CombineFileRecordReader.initNextRecordReader(HadoopShimsSecure.java:329)
+	... 11 more
+Caused by: org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1397637543-10.6.40.110-1384013808840:blk_1073760034_19210 file=/tpch/orders/orders.tbl
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:838)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:526)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:749)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:793)
+	at java.io.DataInputStream.read(DataInputStream.java:100)
+	at org.apache.hadoop.util.LineReader.readDefaultLine(LineReader.java:211)
+	at org.apache.hadoop.util.LineReader.readLine(LineReader.java:174)
+	at org.apache.hadoop.mapred.LineRecordReader.<init>(LineRecordReader.java:131)
+	at org.apache.hadoop.mapred.TextInputFormat.getRecordReader(TextInputFormat.java:67)
+	at org.apache.hadoop.hive.ql.io.CombineHiveRecordReader.<init>(CombineHiveRecordReader.java:65)
+	... 16 more
+
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 768  Reduce: 201   FAIL
+Total MapReduce CPU Time Spent: -1 msec
+Command exited with non-zero status 2
+Time:1203.52
+Running Hive query: tpch/q4_order_priority.hive
+13/11/10 17:19:19 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/10 17:19:19 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/10 17:19:19 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/10 17:19:19 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/10 17:19:19 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/10 17:19:19 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/10 17:19:19 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.73 seconds
+OK
+Time taken: 0.116 seconds
+OK
+Time taken: 0.16 seconds
+OK
+Time taken: 0.107 seconds
+OK
+Time taken: 0.223 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.047 seconds
+OK
+Time taken: 0.059 seconds
+Total MapReduce jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 814
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Running Hive query: tpch/q5_local_supplier_volume.hive
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+Running Hive query: tpch/q7_volume_shipping.hive
+Running Hive query: tpch/q8_national_market_share.hive
+Running Hive query: tpch/q9_product_type_profit.hive
+Running Hive query: tpch/q10_returned_item.hive
+Running Hive query: tpch/q11_important_stock.hive
+Running Hive query: tpch/q12_shipping.hive
+Running Hive query: tpch/q13_customer_distribution.hive
+Running Hive query: tpch/q14_promotion_effect.hive
+Running Hive query: tpch/q15_top_supplier.hive
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+Running Hive query: tpch/q18_large_volume_customer.hive
+Running Hive query: tpch/q19_discounted_revenue.hive
+Running Hive query: tpch/q20_potential_part_promotion.hive
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+Running Hive query: tpch/q22_global_sales_opportunity.hive

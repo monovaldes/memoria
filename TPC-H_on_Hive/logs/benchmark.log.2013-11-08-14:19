@@ -1,0 +1,875 @@
+Running Hive from /opt/hive-0.12.0
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+13/11/08 12:38:39 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:38:39 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:38:39 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:38:39 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:38:39 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:38:39 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:38:39 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 16.931 seconds
+OK
+Time taken: 0.018 seconds
+OK
+Time taken: 0.647 seconds
+OK
+Time taken: 0.056 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 814
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+13/11/08 12:39:05 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+13/11/08 12:39:05 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-08_12-38-58_613_2786547713670470060-1/-local-10003/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+13/11/08 12:39:05 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-08_12-38-58_613_2786547713670470060-1/-local-10003/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+13/11/08 12:39:05 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 12:39:05 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 12:39:05 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 12:39:05 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 12:39:05 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 12:39:05 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 12:39:05 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+Execution log at: /tmp/hadoop/.log
+Job running in-process (local Hadoop)
+Hadoop job information for null: number of mappers: 0; number of reducers: 0
+2013-11-08 12:39:14,955 null map = 0%,  reduce = 0%
+2013-11-08 12:40:01,146 null map = 100%,  reduce = 0%
+2013-11-08 12:40:05,885 null map = 0%,  reduce = 0%
+2013-11-08 12:40:36,691 null map = 100%,  reduce = 0%
+2013-11-08 12:40:39,172 null map = 0%,  reduce = 0%
+2013-11-08 12:40:48,939 null map = 100%,  reduce = 0%
+2013-11-08 12:40:54,888 null map = 0%,  reduce = 0%
+2013-11-08 12:40:58,830 null map = 100%,  reduce = 0%
+2013-11-08 12:41:04,878 null map = 0%,  reduce = 0%
+2013-11-08 12:41:10,093 null map = 100%,  reduce = 0%
+2013-11-08 12:41:16,035 null map = 0%,  reduce = 0%
+2013-11-08 12:41:20,014 null map = 100%,  reduce = 0%
+2013-11-08 12:41:25,949 null map = 0%,  reduce = 0%
+2013-11-08 12:41:29,992 null map = 100%,  reduce = 0%
+2013-11-08 12:41:35,972 null map = 0%,  reduce = 0%
+2013-11-08 12:41:41,031 null map = 100%,  reduce = 0%
+2013-11-08 12:41:45,813 null map = 0%,  reduce = 0%
+2013-11-08 12:41:51,818 null map = 100%,  reduce = 0%
+2013-11-08 12:41:54,217 null map = 0%,  reduce = 0%
+2013-11-08 12:42:02,703 null map = 100%,  reduce = 0%
+2013-11-08 12:42:08,657 null map = 0%,  reduce = 0%
+2013-11-08 12:42:17,020 null map = 100%,  reduce = 0%
+2013-11-08 12:42:21,901 null map = 0%,  reduce = 0%
+2013-11-08 12:42:28,064 null map = 100%,  reduce = 0%
+2013-11-08 12:42:34,052 null map = 0%,  reduce = 0%
+2013-11-08 12:42:38,920 null map = 100%,  reduce = 0%
+2013-11-08 12:42:43,811 null map = 0%,  reduce = 0%
+2013-11-08 12:42:49,135 null map = 100%,  reduce = 0%
+2013-11-08 12:42:51,519 null map = 0%,  reduce = 0%
+2013-11-08 12:42:59,231 null map = 100%,  reduce = 0%
+2013-11-08 12:43:05,215 null map = 1%,  reduce = 0%
+2013-11-08 12:43:09,281 null map = 100%,  reduce = 0%
+2013-11-08 12:43:15,233 null map = 1%,  reduce = 0%
+2013-11-08 12:43:19,177 null map = 100%,  reduce = 0%
+2013-11-08 12:43:25,150 null map = 1%,  reduce = 0%
+2013-11-08 12:43:29,034 null map = 100%,  reduce = 0%
+2013-11-08 12:43:35,041 null map = 1%,  reduce = 0%
+2013-11-08 12:43:40,143 null map = 100%,  reduce = 0%
+2013-11-08 12:43:46,123 null map = 1%,  reduce = 0%
+2013-11-08 12:43:50,224 null map = 100%,  reduce = 0%
+2013-11-08 12:43:56,344 null map = 1%,  reduce = 0%
+2013-11-08 12:44:01,533 null map = 100%,  reduce = 0%
+2013-11-08 12:44:07,493 null map = 1%,  reduce = 0%
+2013-11-08 12:44:16,105 null map = 100%,  reduce = 0%
+2013-11-08 12:44:18,492 null map = 1%,  reduce = 0%
+2013-11-08 12:44:25,937 null map = 100%,  reduce = 0%
+2013-11-08 12:44:31,895 null map = 1%,  reduce = 0%
+2013-11-08 12:44:40,172 null map = 100%,  reduce = 0%
+2013-11-08 12:44:46,158 null map = 1%,  reduce = 0%
+2013-11-08 12:44:49,885 null map = 100%,  reduce = 0%
+2013-11-08 12:44:52,281 null map = 1%,  reduce = 0%
+2013-11-08 12:44:59,900 null map = 100%,  reduce = 0%
+2013-11-08 12:45:05,842 null map = 1%,  reduce = 0%
+2013-11-08 12:45:15,214 null map = 100%,  reduce = 0%
+2013-11-08 12:45:18,059 null map = 1%,  reduce = 0%
+2013-11-08 12:46:18,792 null map = 1%,  reduce = 0%
+2013-11-08 12:47:19,417 null map = 1%,  reduce = 0%
+2013-11-08 12:48:20,130 null map = 1%,  reduce = 0%
+2013-11-08 12:49:20,731 null map = 1%,  reduce = 0%
+2013-11-08 12:49:39,775 null map = 100%,  reduce = 0%
+2013-11-08 12:49:45,875 null map = 1%,  reduce = 0%
+2013-11-08 12:49:50,875 null map = 100%,  reduce = 0%
+2013-11-08 12:49:56,895 null map = 1%,  reduce = 0%
+2013-11-08 12:50:00,989 null map = 100%,  reduce = 0%
+2013-11-08 12:50:03,401 null map = 1%,  reduce = 0%
+2013-11-08 12:50:11,958 null map = 100%,  reduce = 0%
+2013-11-08 12:50:17,927 null map = 1%,  reduce = 0%
+2013-11-08 12:50:22,865 null map = 100%,  reduce = 0%
+2013-11-08 12:50:28,823 null map = 1%,  reduce = 0%
+2013-11-08 12:50:32,959 null map = 100%,  reduce = 0%
+2013-11-08 12:50:38,910 null map = 1%,  reduce = 0%
+2013-11-08 12:50:42,817 null map = 100%,  reduce = 0%
+2013-11-08 12:50:48,804 null map = 1%,  reduce = 0%
+2013-11-08 12:50:52,454 null map = 100%,  reduce = 0%
+2013-11-08 12:50:58,539 null map = 1%,  reduce = 0%
+2013-11-08 12:51:03,917 null map = 100%,  reduce = 0%
+2013-11-08 12:51:09,809 null map = 1%,  reduce = 0%
+2013-11-08 12:51:19,760 null map = 100%,  reduce = 0%
+2013-11-08 12:51:25,822 null map = 1%,  reduce = 0%
+2013-11-08 12:51:30,679 null map = 100%,  reduce = 0%
+2013-11-08 12:51:36,682 null map = 1%,  reduce = 0%
+2013-11-08 12:51:41,785 null map = 100%,  reduce = 0%
+2013-11-08 12:51:47,827 null map = 1%,  reduce = 0%
+2013-11-08 12:51:52,820 null map = 100%,  reduce = 0%
+2013-11-08 12:51:58,799 null map = 1%,  reduce = 0%
+2013-11-08 12:52:02,869 null map = 100%,  reduce = 0%
+2013-11-08 12:52:08,873 null map = 1%,  reduce = 0%
+2013-11-08 12:52:13,045 null map = 100%,  reduce = 0%
+2013-11-08 12:52:18,982 null map = 1%,  reduce = 0%
+2013-11-08 12:52:26,122 null map = 100%,  reduce = 0%
+2013-11-08 12:52:32,095 null map = 1%,  reduce = 0%
+2013-11-08 12:52:35,773 null map = 100%,  reduce = 0%
+2013-11-08 12:52:41,862 null map = 1%,  reduce = 0%
+2013-11-08 12:52:46,791 null map = 100%,  reduce = 0%
+2013-11-08 12:52:52,779 null map = 1%,  reduce = 0%
+2013-11-08 12:52:56,643 null map = 100%,  reduce = 0%
+2013-11-08 12:53:02,629 null map = 2%,  reduce = 0%
+2013-11-08 12:53:06,830 null map = 100%,  reduce = 0%
+2013-11-08 12:53:12,750 null map = 2%,  reduce = 0%
+2013-11-08 12:53:19,177 null map = 100%,  reduce = 0%
+2013-11-08 12:53:25,235 null map = 2%,  reduce = 0%
+2013-11-08 12:53:30,008 null map = 100%,  reduce = 0%
+2013-11-08 12:53:35,955 null map = 2%,  reduce = 0%
+2013-11-08 12:53:43,225 null map = 100%,  reduce = 0%
+2013-11-08 12:53:49,190 null map = 2%,  reduce = 0%
+2013-11-08 12:53:53,170 null map = 100%,  reduce = 0%
+2013-11-08 12:53:59,114 null map = 2%,  reduce = 0%
+2013-11-08 12:54:03,166 null map = 100%,  reduce = 0%
+2013-11-08 12:54:05,554 null map = 2%,  reduce = 0%
+2013-11-08 12:54:13,016 null map = 100%,  reduce = 0%
+2013-11-08 12:54:18,998 null map = 2%,  reduce = 0%
+2013-11-08 12:54:23,109 null map = 100%,  reduce = 0%
+2013-11-08 12:54:29,062 null map = 2%,  reduce = 0%
+2013-11-08 12:54:37,304 null map = 100%,  reduce = 0%
+2013-11-08 12:54:41,318 null map = 2%,  reduce = 0%
+2013-11-08 12:55:42,106 null map = 2%,  reduce = 0%
+2013-11-08 12:56:42,764 null map = 2%,  reduce = 0%
+2013-11-08 12:57:39,094 null map = 100%,  reduce = 0%
+2013-11-08 12:57:45,095 null map = 2%,  reduce = 0%
+2013-11-08 12:57:49,229 null map = 100%,  reduce = 0%
+2013-11-08 12:57:55,250 null map = 2%,  reduce = 0%
+2013-11-08 12:57:59,312 null map = 100%,  reduce = 0%
+2013-11-08 12:58:05,409 null map = 2%,  reduce = 0%
+2013-11-08 12:58:10,252 null map = 100%,  reduce = 0%
+2013-11-08 12:58:16,207 null map = 2%,  reduce = 0%
+2013-11-08 12:58:19,795 null map = 100%,  reduce = 0%
+2013-11-08 12:58:25,737 null map = 2%,  reduce = 0%
+2013-11-08 12:58:31,968 null map = 100%,  reduce = 0%
+2013-11-08 12:58:37,919 null map = 2%,  reduce = 0%
+2013-11-08 12:58:41,532 null map = 100%,  reduce = 0%
+2013-11-08 12:58:47,497 null map = 2%,  reduce = 0%
+2013-11-08 12:58:51,557 null map = 100%,  reduce = 0%
+2013-11-08 12:58:57,508 null map = 2%,  reduce = 0%
+2013-11-08 12:59:01,623 null map = 100%,  reduce = 0%
+2013-11-08 12:59:07,599 null map = 2%,  reduce = 0%
+2013-11-08 12:59:12,382 null map = 100%,  reduce = 0%
+2013-11-08 12:59:14,774 null map = 2%,  reduce = 0%
+2013-11-08 12:59:22,387 null map = 100%,  reduce = 0%
+2013-11-08 12:59:28,348 null map = 2%,  reduce = 0%
+2013-11-08 12:59:31,985 null map = 100%,  reduce = 0%
+2013-11-08 12:59:38,037 null map = 2%,  reduce = 0%
+2013-11-08 12:59:42,895 null map = 100%,  reduce = 0%
+2013-11-08 12:59:47,796 null map = 2%,  reduce = 0%
+2013-11-08 12:59:53,117 null map = 100%,  reduce = 0%
+2013-11-08 12:59:59,093 null map = 2%,  reduce = 0%
+2013-11-08 13:00:03,938 null map = 100%,  reduce = 0%
+2013-11-08 13:00:09,875 null map = 2%,  reduce = 0%
+2013-11-08 13:00:13,491 null map = 100%,  reduce = 0%
+2013-11-08 13:00:19,468 null map = 2%,  reduce = 0%
+2013-11-08 13:00:23,074 null map = 100%,  reduce = 0%
+2013-11-08 13:00:29,051 null map = 2%,  reduce = 0%
+2013-11-08 13:00:32,652 null map = 100%,  reduce = 0%
+2013-11-08 13:00:38,627 null map = 2%,  reduce = 0%
+2013-11-08 13:00:42,204 null map = 100%,  reduce = 0%
+2013-11-08 13:00:48,265 null map = 2%,  reduce = 0%
+2013-11-08 13:00:52,450 null map = 100%,  reduce = 0%
+2013-11-08 13:00:58,384 null map = 2%,  reduce = 0%
+2013-11-08 13:01:07,904 null map = 100%,  reduce = 0%
+2013-11-08 13:01:13,931 null map = 3%,  reduce = 0%
+2013-11-08 13:01:18,044 null map = 100%,  reduce = 0%
+2013-11-08 13:01:23,999 null map = 3%,  reduce = 0%
+2013-11-08 13:01:31,595 null map = 100%,  reduce = 0%
+2013-11-08 13:01:37,562 null map = 3%,  reduce = 0%
+2013-11-08 13:01:44,043 null map = 100%,  reduce = 0%
+2013-11-08 13:01:50,005 null map = 3%,  reduce = 0%
+2013-11-08 13:01:55,297 null map = 100%,  reduce = 0%
+2013-11-08 13:02:01,256 null map = 3%,  reduce = 0%
+2013-11-08 13:02:06,302 null map = 100%,  reduce = 0%
+2013-11-08 13:02:12,342 null map = 3%,  reduce = 0%
+2013-11-08 13:02:16,446 null map = 100%,  reduce = 0%
+2013-11-08 13:02:22,396 null map = 3%,  reduce = 0%
+2013-11-08 13:02:27,173 null map = 100%,  reduce = 0%
+2013-11-08 13:02:31,171 null map = 3%,  reduce = 0%
+2013-11-08 13:03:31,964 null map = 3%,  reduce = 0%
+2013-11-08 13:04:32,713 null map = 3%,  reduce = 0%
+2013-11-08 13:05:33,448 null map = 3%,  reduce = 0%
+2013-11-08 13:05:52,173 null map = 100%,  reduce = 0%
+2013-11-08 13:05:58,270 null map = 3%,  reduce = 0%
+2013-11-08 13:06:03,083 null map = 100%,  reduce = 0%
+2013-11-08 13:06:07,947 null map = 3%,  reduce = 0%
+2013-11-08 13:06:13,100 null map = 100%,  reduce = 0%
+2013-11-08 13:06:19,222 null map = 3%,  reduce = 0%
+2013-11-08 13:06:23,274 null map = 100%,  reduce = 0%
+2013-11-08 13:06:29,209 null map = 3%,  reduce = 0%
+2013-11-08 13:06:33,278 null map = 100%,  reduce = 0%
+2013-11-08 13:06:39,291 null map = 3%,  reduce = 0%
+2013-11-08 13:06:43,122 null map = 100%,  reduce = 0%
+2013-11-08 13:06:45,507 null map = 3%,  reduce = 0%
+2013-11-08 13:06:52,993 null map = 100%,  reduce = 0%
+2013-11-08 13:06:58,952 null map = 3%,  reduce = 0%
+2013-11-08 13:07:02,794 null map = 100%,  reduce = 0%
+2013-11-08 13:07:08,925 null map = 3%,  reduce = 0%
+2013-11-08 13:07:13,725 null map = 100%,  reduce = 0%
+2013-11-08 13:07:19,693 null map = 3%,  reduce = 0%
+2013-11-08 13:07:23,313 null map = 100%,  reduce = 0%
+2013-11-08 13:07:29,314 null map = 3%,  reduce = 0%
+2013-11-08 13:07:33,384 null map = 100%,  reduce = 0%
+2013-11-08 13:07:39,458 null map = 3%,  reduce = 0%
+2013-11-08 13:07:43,509 null map = 100%,  reduce = 0%
+2013-11-08 13:07:49,608 null map = 3%,  reduce = 0%
+2013-11-08 13:07:54,400 null map = 100%,  reduce = 0%
+2013-11-08 13:07:56,776 null map = 3%,  reduce = 0%
+2013-11-08 13:08:04,532 null map = 100%,  reduce = 0%
+2013-11-08 13:08:10,661 null map = 3%,  reduce = 0%
+2013-11-08 13:08:15,977 null map = 100%,  reduce = 0%
+2013-11-08 13:08:20,778 null map = 3%,  reduce = 0%
+2013-11-08 13:08:27,177 null map = 100%,  reduce = 0%
+2013-11-08 13:08:33,144 null map = 3%,  reduce = 0%
+2013-11-08 13:08:37,196 null map = 100%,  reduce = 0%
+2013-11-08 13:08:43,208 null map = 3%,  reduce = 0%
+2013-11-08 13:08:47,344 null map = 100%,  reduce = 0%
+2013-11-08 13:08:53,352 null map = 3%,  reduce = 0%
+2013-11-08 13:08:57,425 null map = 100%,  reduce = 0%
+2013-11-08 13:09:03,442 null map = 3%,  reduce = 0%
+2013-11-08 13:09:08,363 null map = 100%,  reduce = 0%
+2013-11-08 13:09:14,369 null map = 3%,  reduce = 0%
+2013-11-08 13:09:18,290 null map = 100%,  reduce = 0%
+2013-11-08 13:09:24,427 null map = 3%,  reduce = 0%
+2013-11-08 13:09:28,557 null map = 100%,  reduce = 0%
+2013-11-08 13:09:34,537 null map = 3%,  reduce = 0%
+2013-11-08 13:09:38,597 null map = 100%,  reduce = 0%
+2013-11-08 13:09:43,705 null map = 4%,  reduce = 0%
+2013-11-08 13:09:48,966 null map = 100%,  reduce = 0%
+2013-11-08 13:09:55,016 null map = 4%,  reduce = 0%
+2013-11-08 13:09:59,178 null map = 100%,  reduce = 0%
+2013-11-08 13:10:01,575 null map = 4%,  reduce = 0%
+2013-11-08 13:10:11,174 null map = 100%,  reduce = 0%
+2013-11-08 13:10:17,143 null map = 4%,  reduce = 0%
+2013-11-08 13:10:20,748 null map = 100%,  reduce = 0%
+2013-11-08 13:10:25,622 null map = 4%,  reduce = 0%
+2013-11-08 13:10:32,091 null map = 100%,  reduce = 0%
+2013-11-08 13:10:36,792 null map = 4%,  reduce = 0%
+2013-11-08 13:11:37,605 null map = 4%,  reduce = 0%
+2013-11-08 13:12:38,372 null map = 4%,  reduce = 0%
+2013-11-08 13:13:17,464 null map = 100%,  reduce = 0%
+2013-11-08 13:13:23,561 null map = 4%,  reduce = 0%
+2013-11-08 13:13:28,344 null map = 100%,  reduce = 0%
+2013-11-08 13:13:34,361 null map = 4%,  reduce = 0%
+2013-11-08 13:13:38,438 null map = 100%,  reduce = 0%
+2013-11-08 13:13:44,413 null map = 4%,  reduce = 0%
+2013-11-08 13:13:48,487 null map = 100%,  reduce = 0%
+2013-11-08 13:13:53,288 null map = 4%,  reduce = 0%
+2013-11-08 13:13:59,264 null map = 100%,  reduce = 0%
+2013-11-08 13:14:05,266 null map = 4%,  reduce = 0%
+2013-11-08 13:14:09,470 null map = 100%,  reduce = 0%
+2013-11-08 13:14:15,404 null map = 4%,  reduce = 0%
+2013-11-08 13:14:23,981 null map = 100%,  reduce = 0%
+2013-11-08 13:14:29,950 null map = 4%,  reduce = 0%
+2013-11-08 13:14:33,979 null map = 100%,  reduce = 0%
+2013-11-08 13:14:39,987 null map = 4%,  reduce = 0%
+2013-11-08 13:14:44,092 null map = 100%,  reduce = 0%
+2013-11-08 13:14:50,134 null map = 4%,  reduce = 0%
+2013-11-08 13:14:54,237 null map = 100%,  reduce = 0%
+2013-11-08 13:14:56,643 null map = 4%,  reduce = 0%
+2013-11-08 13:15:05,147 null map = 100%,  reduce = 0%
+2013-11-08 13:15:11,120 null map = 4%,  reduce = 0%
+2013-11-08 13:15:14,753 null map = 100%,  reduce = 0%
+2013-11-08 13:15:17,118 null map = 4%,  reduce = 0%
+2013-11-08 13:15:24,335 null map = 100%,  reduce = 0%
+2013-11-08 13:15:30,399 null map = 4%,  reduce = 0%
+2013-11-08 13:15:35,311 null map = 100%,  reduce = 0%
+2013-11-08 13:15:41,363 null map = 4%,  reduce = 0%
+2013-11-08 13:15:46,616 null map = 100%,  reduce = 0%
+2013-11-08 13:15:52,593 null map = 4%,  reduce = 0%
+2013-11-08 13:15:56,671 null map = 100%,  reduce = 0%
+2013-11-08 13:16:02,659 null map = 4%,  reduce = 0%
+2013-11-08 13:16:06,785 null map = 100%,  reduce = 0%
+2013-11-08 13:16:12,745 null map = 4%,  reduce = 0%
+2013-11-08 13:16:17,523 null map = 100%,  reduce = 0%
+2013-11-08 13:16:23,487 null map = 4%,  reduce = 0%
+2013-11-08 13:16:27,095 null map = 100%,  reduce = 0%
+2013-11-08 13:16:32,033 null map = 4%,  reduce = 0%
+2013-11-08 13:16:38,229 null map = 100%,  reduce = 0%
+2013-11-08 13:16:40,618 null map = 4%,  reduce = 0%
+2013-11-08 13:16:50,206 null map = 100%,  reduce = 0%
+2013-11-08 13:16:56,229 null map = 4%,  reduce = 0%
+2013-11-08 13:17:00,368 null map = 100%,  reduce = 0%
+2013-11-08 13:17:02,748 null map = 4%,  reduce = 0%
+2013-11-08 13:17:13,880 null map = 100%,  reduce = 0%
+2013-11-08 13:17:19,819 null map = 4%,  reduce = 0%
+2013-11-08 13:17:26,356 null map = 100%,  reduce = 0%
+2013-11-08 13:17:32,330 null map = 4%,  reduce = 0%
+2013-11-08 13:17:36,247 null map = 100%,  reduce = 0%
+2013-11-08 13:17:42,235 null map = 4%,  reduce = 0%
+2013-11-08 13:17:45,905 null map = 100%,  reduce = 0%
+2013-11-08 13:17:51,873 null map = 5%,  reduce = 0%
+2013-11-08 13:17:55,953 null map = 100%,  reduce = 0%
+2013-11-08 13:18:01,952 null map = 5%,  reduce = 0%
+2013-11-08 13:18:05,566 null map = 100%,  reduce = 0%
+2013-11-08 13:18:11,930 null map = 5%,  reduce = 0%
+2013-11-08 13:19:12,783 null map = 5%,  reduce = 0%
+2013-11-08 13:20:13,567 null map = 5%,  reduce = 0%
+2013-11-08 13:20:45,513 null map = 100%,  reduce = 0%
+2013-11-08 13:20:50,445 null map = 5%,  reduce = 0%
+2013-11-08 13:20:56,569 null map = 100%,  reduce = 0%
+2013-11-08 13:21:02,642 null map = 5%,  reduce = 0%
+2013-11-08 13:21:07,949 null map = 100%,  reduce = 0%
+2013-11-08 13:21:13,967 null map = 5%,  reduce = 0%
+2013-11-08 13:21:19,108 null map = 100%,  reduce = 0%
+2013-11-08 13:21:25,146 null map = 5%,  reduce = 0%
+2013-11-08 13:21:29,948 null map = 100%,  reduce = 0%
+2013-11-08 13:21:35,999 null map = 5%,  reduce = 0%
+2013-11-08 13:21:40,115 null map = 100%,  reduce = 0%
+2013-11-08 13:21:46,099 null map = 5%,  reduce = 0%
+2013-11-08 13:21:49,710 null map = 100%,  reduce = 0%
+2013-11-08 13:21:55,695 null map = 5%,  reduce = 0%
+2013-11-08 13:22:00,729 null map = 100%,  reduce = 0%
+2013-11-08 13:22:06,757 null map = 5%,  reduce = 0%
+2013-11-08 13:22:11,595 null map = 100%,  reduce = 0%
+2013-11-08 13:22:17,564 null map = 5%,  reduce = 0%
+2013-11-08 13:22:21,229 null map = 100%,  reduce = 0%
+2013-11-08 13:22:27,267 null map = 5%,  reduce = 0%
+2013-11-08 13:22:32,262 null map = 100%,  reduce = 0%
+2013-11-08 13:22:38,239 null map = 5%,  reduce = 0%
+2013-11-08 13:22:43,216 null map = 100%,  reduce = 0%
+2013-11-08 13:22:45,659 null map = 5%,  reduce = 0%
+2013-11-08 13:22:54,397 null map = 100%,  reduce = 0%
+2013-11-08 13:23:00,518 null map = 5%,  reduce = 0%
+2013-11-08 13:23:05,390 null map = 100%,  reduce = 0%
+2013-11-08 13:23:10,385 null map = 5%,  reduce = 0%
+2013-11-08 13:23:16,872 null map = 100%,  reduce = 0%
+2013-11-08 13:23:22,832 null map = 5%,  reduce = 0%
+2013-11-08 13:23:30,012 null map = 100%,  reduce = 0%
+2013-11-08 13:23:36,002 null map = 5%,  reduce = 0%
+2013-11-08 13:23:39,612 null map = 100%,  reduce = 0%
+2013-11-08 13:23:45,577 null map = 5%,  reduce = 0%
+2013-11-08 13:23:49,203 null map = 100%,  reduce = 0%
+2013-11-08 13:23:55,160 null map = 5%,  reduce = 0%
+2013-11-08 13:23:58,815 null map = 100%,  reduce = 0%
+2013-11-08 13:24:04,867 null map = 5%,  reduce = 0%
+2013-11-08 13:24:10,054 null map = 100%,  reduce = 0%
+2013-11-08 13:24:16,005 null map = 5%,  reduce = 0%
+2013-11-08 13:24:21,278 null map = 100%,  reduce = 0%
+2013-11-08 13:24:23,743 null map = 5%,  reduce = 0%
+2013-11-08 13:24:32,320 null map = 100%,  reduce = 0%
+2013-11-08 13:24:38,266 null map = 5%,  reduce = 0%
+2013-11-08 13:24:42,015 null map = 100%,  reduce = 0%
+2013-11-08 13:24:47,979 null map = 5%,  reduce = 0%
+2013-11-08 13:24:51,618 null map = 100%,  reduce = 0%
+2013-11-08 13:24:57,614 null map = 5%,  reduce = 0%
+2013-11-08 13:25:01,297 null map = 100%,  reduce = 0%
+2013-11-08 13:25:07,269 null map = 5%,  reduce = 0%
+2013-11-08 13:25:11,058 null map = 100%,  reduce = 0%
+2013-11-08 13:25:15,841 null map = 5%,  reduce = 0%
+2013-11-08 13:25:20,733 null map = 100%,  reduce = 0%
+2013-11-08 13:25:26,712 null map = 5%,  reduce = 0%
+2013-11-08 13:25:30,777 null map = 100%,  reduce = 0%
+2013-11-08 13:25:36,657 null map = 6%,  reduce = 0%
+2013-11-08 13:26:37,480 null map = 6%,  reduce = 0%
+2013-11-08 13:27:38,304 null map = 6%,  reduce = 0%
+2013-11-08 13:28:04,073 null map = 100%,  reduce = 0%
+2013-11-08 13:28:10,056 null map = 6%,  reduce = 0%
+2013-11-08 13:28:14,043 null map = 100%,  reduce = 0%
+2013-11-08 13:28:20,026 null map = 6%,  reduce = 0%
+2013-11-08 13:28:23,898 null map = 100%,  reduce = 0%
+2013-11-08 13:28:30,052 null map = 6%,  reduce = 0%
+2013-11-08 13:28:35,065 null map = 100%,  reduce = 0%
+2013-11-08 13:28:37,450 null map = 6%,  reduce = 0%
+2013-11-08 13:28:45,818 null map = 100%,  reduce = 0%
+2013-11-08 13:28:50,674 null map = 6%,  reduce = 0%
+2013-11-08 13:28:57,302 null map = 100%,  reduce = 0%
+2013-11-08 13:29:03,265 null map = 6%,  reduce = 0%
+2013-11-08 13:29:12,063 null map = 100%,  reduce = 0%
+2013-11-08 13:29:14,508 null map = 6%,  reduce = 0%
+2013-11-08 13:29:23,004 null map = 100%,  reduce = 0%
+2013-11-08 13:29:29,019 null map = 6%,  reduce = 0%
+2013-11-08 13:29:33,912 null map = 100%,  reduce = 0%
+2013-11-08 13:29:39,874 null map = 6%,  reduce = 0%
+2013-11-08 13:29:51,051 null map = 100%,  reduce = 0%
+2013-11-08 13:29:57,092 null map = 6%,  reduce = 0%
+2013-11-08 13:30:01,140 null map = 100%,  reduce = 0%
+2013-11-08 13:30:07,101 null map = 6%,  reduce = 0%
+2013-11-08 13:30:10,950 null map = 100%,  reduce = 0%
+2013-11-08 13:30:17,006 null map = 6%,  reduce = 0%
+2013-11-08 13:30:21,139 null map = 100%,  reduce = 0%
+2013-11-08 13:30:27,151 null map = 6%,  reduce = 0%
+2013-11-08 13:30:31,191 null map = 100%,  reduce = 0%
+2013-11-08 13:30:37,236 null map = 6%,  reduce = 0%
+2013-11-08 13:30:42,094 null map = 100%,  reduce = 0%
+2013-11-08 13:30:48,130 null map = 6%,  reduce = 0%
+2013-11-08 13:30:52,235 null map = 100%,  reduce = 0%
+2013-11-08 13:30:58,208 null map = 6%,  reduce = 0%
+2013-11-08 13:31:04,212 null map = 100%,  reduce = 0%
+2013-11-08 13:31:10,167 null map = 6%,  reduce = 0%
+2013-11-08 13:31:13,818 null map = 100%,  reduce = 0%
+2013-11-08 13:31:19,806 null map = 6%,  reduce = 0%
+2013-11-08 13:31:23,424 null map = 100%,  reduce = 0%
+2013-11-08 13:31:29,531 null map = 6%,  reduce = 0%
+2013-11-08 13:31:34,374 null map = 100%,  reduce = 0%
+2013-11-08 13:31:40,380 null map = 6%,  reduce = 0%
+2013-11-08 13:31:44,048 null map = 100%,  reduce = 0%
+2013-11-08 13:31:46,470 null map = 6%,  reduce = 0%
+2013-11-08 13:31:55,630 null map = 100%,  reduce = 0%
+2013-11-08 13:32:01,611 null map = 6%,  reduce = 0%
+2013-11-08 13:32:05,532 null map = 100%,  reduce = 0%
+2013-11-08 13:32:11,541 null map = 6%,  reduce = 0%
+2013-11-08 13:32:15,261 null map = 100%,  reduce = 0%
+2013-11-08 13:32:21,239 null map = 6%,  reduce = 0%
+2013-11-08 13:32:25,230 null map = 100%,  reduce = 0%
+2013-11-08 13:32:31,198 null map = 6%,  reduce = 0%
+2013-11-08 13:32:35,015 null map = 100%,  reduce = 0%
+2013-11-08 13:32:37,417 null map = 6%,  reduce = 0%
+2013-11-08 13:32:44,597 null map = 100%,  reduce = 0%
+2013-11-08 13:32:50,653 null map = 6%,  reduce = 0%
+2013-11-08 13:32:54,273 null map = 100%,  reduce = 0%
+2013-11-08 13:33:00,634 null map = 6%,  reduce = 0%
+2013-11-08 13:34:01,528 null map = 6%,  reduce = 0%
+2013-11-08 13:35:02,367 null map = 6%,  reduce = 0%
+2013-11-08 13:35:56,810 null map = 100%,  reduce = 0%
+2013-11-08 13:36:02,952 null map = 6%,  reduce = 0%
+2013-11-08 13:36:08,227 null map = 100%,  reduce = 0%
+2013-11-08 13:36:14,252 null map = 7%,  reduce = 0%
+2013-11-08 13:36:18,381 null map = 100%,  reduce = 0%
+2013-11-08 13:36:24,415 null map = 7%,  reduce = 0%
+2013-11-08 13:36:29,281 null map = 100%,  reduce = 0%
+2013-11-08 13:36:35,255 null map = 7%,  reduce = 0%
+2013-11-08 13:36:41,729 null map = 100%,  reduce = 0%
+2013-11-08 13:36:47,743 null map = 7%,  reduce = 0%
+2013-11-08 13:36:53,073 null map = 100%,  reduce = 0%
+2013-11-08 13:36:59,074 null map = 7%,  reduce = 0%
+2013-11-08 13:37:03,882 null map = 100%,  reduce = 0%
+2013-11-08 13:37:08,685 null map = 7%,  reduce = 0%
+2013-11-08 13:37:13,492 null map = 100%,  reduce = 0%
+2013-11-08 13:37:19,594 null map = 7%,  reduce = 0%
+2013-11-08 13:37:23,610 null map = 100%,  reduce = 0%
+2013-11-08 13:37:28,384 null map = 7%,  reduce = 0%
+2013-11-08 13:37:33,642 null map = 100%,  reduce = 0%
+2013-11-08 13:37:39,651 null map = 7%,  reduce = 0%
+2013-11-08 13:37:44,482 null map = 100%,  reduce = 0%
+2013-11-08 13:37:49,318 null map = 7%,  reduce = 0%
+2013-11-08 13:37:54,569 null map = 100%,  reduce = 0%
+2013-11-08 13:38:00,715 null map = 7%,  reduce = 0%
+2013-11-08 13:38:06,140 null map = 100%,  reduce = 0%
+2013-11-08 13:38:12,119 null map = 7%,  reduce = 0%
+2013-11-08 13:38:16,992 null map = 100%,  reduce = 0%
+2013-11-08 13:38:22,967 null map = 7%,  reduce = 0%
+2013-11-08 13:38:26,948 null map = 100%,  reduce = 0%
+2013-11-08 13:38:31,728 null map = 7%,  reduce = 0%
+2013-11-08 13:38:37,742 null map = 100%,  reduce = 0%
+2013-11-08 13:38:42,549 null map = 7%,  reduce = 0%
+2013-11-08 13:38:47,356 null map = 100%,  reduce = 0%
+2013-11-08 13:38:53,348 null map = 7%,  reduce = 0%
+2013-11-08 13:38:57,362 null map = 100%,  reduce = 0%
+2013-11-08 13:39:03,379 null map = 7%,  reduce = 0%
+2013-11-08 13:39:07,101 null map = 100%,  reduce = 0%
+2013-11-08 13:39:13,182 null map = 7%,  reduce = 0%
+2013-11-08 13:39:17,225 null map = 100%,  reduce = 0%
+2013-11-08 13:39:23,169 null map = 7%,  reduce = 0%
+2013-11-08 13:39:33,249 null map = 100%,  reduce = 0%
+2013-11-08 13:39:35,680 null map = 7%,  reduce = 0%
+2013-11-08 13:39:44,307 null map = 100%,  reduce = 0%
+2013-11-08 13:39:50,336 null map = 7%,  reduce = 0%
+2013-11-08 13:39:54,421 null map = 100%,  reduce = 0%
+2013-11-08 13:40:00,392 null map = 7%,  reduce = 0%
+2013-11-08 13:40:06,785 null map = 100%,  reduce = 0%
+2013-11-08 13:40:12,779 null map = 7%,  reduce = 0%
+2013-11-08 13:40:16,851 null map = 100%,  reduce = 0%
+2013-11-08 13:40:22,868 null map = 7%,  reduce = 0%
+2013-11-08 13:40:26,987 null map = 100%,  reduce = 0%
+2013-11-08 13:40:32,996 null map = 7%,  reduce = 0%
+2013-11-08 13:40:36,652 null map = 100%,  reduce = 0%
+2013-11-08 13:40:42,766 null map = 7%,  reduce = 0%
+2013-11-08 13:40:46,771 null map = 100%,  reduce = 0%
+2013-11-08 13:40:52,648 null map = 7%,  reduce = 0%
+2013-11-08 13:41:53,643 null map = 7%,  reduce = 0%
+2013-11-08 13:42:54,598 null map = 7%,  reduce = 0%
+2013-11-08 13:43:32,669 null map = 100%,  reduce = 0%
+2013-11-08 13:43:38,752 null map = 7%,  reduce = 0%
+2013-11-08 13:43:42,871 null map = 100%,  reduce = 0%
+2013-11-08 13:43:48,947 null map = 7%,  reduce = 0%
+2013-11-08 13:43:53,910 null map = 100%,  reduce = 0%
+2013-11-08 13:43:59,989 null map = 7%,  reduce = 0%
+2013-11-08 13:44:04,069 null map = 100%,  reduce = 0%
+2013-11-08 13:44:10,064 null map = 7%,  reduce = 0%
+2013-11-08 13:44:13,808 null map = 100%,  reduce = 0%
+2013-11-08 13:44:19,842 null map = 8%,  reduce = 0%
+2013-11-08 13:44:23,993 null map = 100%,  reduce = 0%
+2013-11-08 13:44:28,776 null map = 8%,  reduce = 0%
+2013-11-08 13:44:34,787 null map = 100%,  reduce = 0%
+2013-11-08 13:44:40,767 null map = 8%,  reduce = 0%
+2013-11-08 13:44:45,918 null map = 100%,  reduce = 0%
+2013-11-08 13:44:48,314 null map = 8%,  reduce = 0%
+2013-11-08 13:44:56,083 null map = 100%,  reduce = 0%
+2013-11-08 13:45:02,151 null map = 8%,  reduce = 0%
+2013-11-08 13:45:06,266 null map = 100%,  reduce = 0%
+2013-11-08 13:45:12,398 null map = 8%,  reduce = 0%
+2013-11-08 13:45:17,678 null map = 100%,  reduce = 0%
+2013-11-08 13:45:23,681 null map = 8%,  reduce = 0%
+2013-11-08 13:45:27,628 null map = 100%,  reduce = 0%
+2013-11-08 13:45:33,727 null map = 8%,  reduce = 0%
+2013-11-08 13:45:37,583 null map = 100%,  reduce = 0%
+2013-11-08 13:45:43,668 null map = 8%,  reduce = 0%
+2013-11-08 13:45:47,580 null map = 100%,  reduce = 0%
+2013-11-08 13:45:53,593 null map = 8%,  reduce = 0%
+2013-11-08 13:45:57,784 null map = 100%,  reduce = 0%
+2013-11-08 13:46:01,461 null map = 8%,  reduce = 0%
+2013-11-08 13:46:08,741 null map = 100%,  reduce = 0%
+2013-11-08 13:46:14,706 null map = 8%,  reduce = 0%
+2013-11-08 13:46:18,752 null map = 100%,  reduce = 0%
+2013-11-08 13:46:24,803 null map = 8%,  reduce = 0%
+2013-11-08 13:46:28,893 null map = 100%,  reduce = 0%
+2013-11-08 13:46:34,915 null map = 8%,  reduce = 0%
+2013-11-08 13:46:38,819 null map = 100%,  reduce = 0%
+2013-11-08 13:46:41,204 null map = 8%,  reduce = 0%
+2013-11-08 13:46:53,674 null map = 100%,  reduce = 0%
+2013-11-08 13:46:59,733 null map = 8%,  reduce = 0%
+2013-11-08 13:47:03,806 null map = 100%,  reduce = 0%
+2013-11-08 13:47:09,855 null map = 8%,  reduce = 0%
+2013-11-08 13:47:14,681 null map = 100%,  reduce = 0%
+2013-11-08 13:47:20,667 null map = 8%,  reduce = 0%
+2013-11-08 13:47:24,245 null map = 100%,  reduce = 0%
+2013-11-08 13:47:30,288 null map = 8%,  reduce = 0%
+2013-11-08 13:47:34,469 null map = 100%,  reduce = 0%
+2013-11-08 13:47:36,899 null map = 8%,  reduce = 0%
+2013-11-08 13:47:44,674 null map = 100%,  reduce = 0%
+2013-11-08 13:47:50,658 null map = 8%,  reduce = 0%
+2013-11-08 13:47:56,864 null map = 100%,  reduce = 0%
+2013-11-08 13:48:02,885 null map = 8%,  reduce = 0%
+2013-11-08 13:48:06,777 null map = 100%,  reduce = 0%
+2013-11-08 13:48:11,740 null map = 8%,  reduce = 0%
+2013-11-08 13:48:18,246 null map = 100%,  reduce = 0%
+2013-11-08 13:48:22,972 null map = 8%,  reduce = 0%
+2013-11-08 13:49:24,014 null map = 8%,  reduce = 0%
+2013-11-08 13:50:24,919 null map = 8%,  reduce = 0%
+2013-11-08 13:51:25,869 null map = 8%,  reduce = 0%
+2013-11-08 13:51:37,903 null map = 100%,  reduce = 0%
+2013-11-08 13:51:43,994 null map = 8%,  reduce = 0%
+2013-11-08 13:51:48,925 null map = 100%,  reduce = 0%
+2013-11-08 13:51:54,966 null map = 8%,  reduce = 0%
+2013-11-08 13:51:59,124 null map = 100%,  reduce = 0%
+2013-11-08 13:52:05,134 null map = 8%,  reduce = 0%
+2013-11-08 13:52:10,053 null map = 100%,  reduce = 0%
+2013-11-08 13:52:14,871 null map = 8%,  reduce = 0%
+2013-11-08 13:52:19,854 null map = 100%,  reduce = 0%
+2013-11-08 13:52:25,953 null map = 8%,  reduce = 0%
+2013-11-08 13:52:30,067 null map = 100%,  reduce = 0%
+2013-11-08 13:52:36,037 null map = 8%,  reduce = 0%
+2013-11-08 13:52:40,062 null map = 100%,  reduce = 0%
+2013-11-08 13:52:46,059 null map = 9%,  reduce = 0%
+2013-11-08 13:52:49,679 null map = 100%,  reduce = 0%
+2013-11-08 13:52:55,789 null map = 9%,  reduce = 0%
+2013-11-08 13:53:01,241 null map = 100%,  reduce = 0%
+2013-11-08 13:53:07,308 null map = 9%,  reduce = 0%
+2013-11-08 13:53:11,162 null map = 100%,  reduce = 0%
+2013-11-08 13:53:17,190 null map = 9%,  reduce = 0%
+2013-11-08 13:53:25,802 null map = 100%,  reduce = 0%
+2013-11-08 13:53:30,585 null map = 9%,  reduce = 0%
+2013-11-08 13:53:37,031 null map = 100%,  reduce = 0%
+2013-11-08 13:53:43,194 null map = 9%,  reduce = 0%
+2013-11-08 13:53:48,043 null map = 100%,  reduce = 0%
+2013-11-08 13:53:54,035 null map = 9%,  reduce = 0%
+2013-11-08 13:53:57,886 null map = 100%,  reduce = 0%
+2013-11-08 13:54:03,881 null map = 9%,  reduce = 0%
+2013-11-08 13:54:08,078 null map = 100%,  reduce = 0%
+2013-11-08 13:54:14,076 null map = 9%,  reduce = 0%
+2013-11-08 13:54:18,878 null map = 100%,  reduce = 0%
+2013-11-08 13:54:24,877 null map = 9%,  reduce = 0%
+2013-11-08 13:54:28,502 null map = 100%,  reduce = 0%
+2013-11-08 13:54:34,496 null map = 9%,  reduce = 0%
+2013-11-08 13:54:38,120 null map = 100%,  reduce = 0%
+2013-11-08 13:54:43,054 null map = 9%,  reduce = 0%
+2013-11-08 13:54:48,405 null map = 100%,  reduce = 0%
+2013-11-08 13:54:50,801 null map = 9%,  reduce = 0%
+2013-11-08 13:54:58,506 null map = 100%,  reduce = 0%
+2013-11-08 13:55:04,529 null map = 9%,  reduce = 0%
+2013-11-08 13:55:08,637 null map = 100%,  reduce = 0%
+2013-11-08 13:55:14,670 null map = 9%,  reduce = 0%
+2013-11-08 13:55:18,597 null map = 100%,  reduce = 0%
+2013-11-08 13:55:24,667 null map = 9%,  reduce = 0%
+2013-11-08 13:55:28,709 null map = 100%,  reduce = 0%
+2013-11-08 13:55:34,695 null map = 9%,  reduce = 0%
+2013-11-08 13:55:38,614 null map = 100%,  reduce = 0%
+2013-11-08 13:55:44,605 null map = 9%,  reduce = 0%
+2013-11-08 13:55:48,774 null map = 100%,  reduce = 0%
+2013-11-08 13:55:51,188 null map = 9%,  reduce = 0%
+2013-11-08 13:55:58,875 null map = 100%,  reduce = 0%
+2013-11-08 13:56:04,869 null map = 9%,  reduce = 0%
+2013-11-08 13:56:10,152 null map = 100%,  reduce = 0%
+2013-11-08 13:56:16,283 null map = 9%,  reduce = 0%
+2013-11-08 13:56:21,569 null map = 100%,  reduce = 0%
+2013-11-08 13:56:26,282 null map = 9%,  reduce = 0%
+2013-11-08 13:57:27,301 null map = 9%,  reduce = 0%
+2013-11-08 13:58:28,276 null map = 9%,  reduce = 0%
+2013-11-08 13:59:10,572 null map = 100%,  reduce = 0%
+2013-11-08 13:59:16,625 null map = 9%,  reduce = 0%
+2013-11-08 13:59:20,671 null map = 100%,  reduce = 0%
+2013-11-08 13:59:26,750 null map = 9%,  reduce = 0%
+2013-11-08 13:59:30,891 null map = 100%,  reduce = 0%
+2013-11-08 13:59:36,921 null map = 9%,  reduce = 0%
+2013-11-08 13:59:41,044 null map = 100%,  reduce = 0%
+2013-11-08 13:59:47,025 null map = 9%,  reduce = 0%
+2013-11-08 13:59:50,880 null map = 100%,  reduce = 0%
+2013-11-08 13:59:55,858 null map = 9%,  reduce = 0%
+2013-11-08 14:00:01,221 null map = 100%,  reduce = 0%
+2013-11-08 14:00:07,245 null map = 9%,  reduce = 0%
+2013-11-08 14:00:11,328 null map = 100%,  reduce = 0%
+2013-11-08 14:00:17,333 null map = 9%,  reduce = 0%
+2013-11-08 14:00:22,125 null map = 100%,  reduce = 0%
+2013-11-08 14:00:28,206 null map = 9%,  reduce = 0%
+2013-11-08 14:00:32,336 null map = 100%,  reduce = 0%
+2013-11-08 14:00:38,327 null map = 9%,  reduce = 0%
+2013-11-08 14:00:44,307 null map = 10%,  reduce = 0%
+2013-11-08 14:00:49,182 null map = 100%,  reduce = 0%
+2013-11-08 14:00:55,332 null map = 10%,  reduce = 0%
+2013-11-08 14:01:00,284 null map = 100%,  reduce = 0%
+2013-11-08 14:01:06,303 null map = 10%,  reduce = 0%
+2013-11-08 14:01:10,471 null map = 100%,  reduce = 0%
+2013-11-08 14:01:16,590 null map = 10%,  reduce = 0%
+2013-11-08 14:01:21,452 null map = 100%,  reduce = 0%
+2013-11-08 14:01:27,477 null map = 10%,  reduce = 0%
+2013-11-08 14:01:32,550 null map = 100%,  reduce = 0%
+2013-11-08 14:01:38,717 null map = 10%,  reduce = 0%
+2013-11-08 14:01:43,879 null map = 100%,  reduce = 0%
+2013-11-08 14:01:49,903 null map = 10%,  reduce = 0%
+2013-11-08 14:01:53,883 null map = 100%,  reduce = 0%
+2013-11-08 14:01:58,691 null map = 10%,  reduce = 0%
+2013-11-08 14:02:03,973 null map = 100%,  reduce = 0%
+2013-11-08 14:02:09,981 null map = 10%,  reduce = 0%
+2013-11-08 14:02:14,084 null map = 100%,  reduce = 0%
+2013-11-08 14:02:20,116 null map = 10%,  reduce = 0%
+2013-11-08 14:02:24,289 null map = 100%,  reduce = 0%
+2013-11-08 14:02:30,484 null map = 10%,  reduce = 0%
+2013-11-08 14:02:35,336 null map = 100%,  reduce = 0%
+2013-11-08 14:02:41,339 null map = 10%,  reduce = 0%
+2013-11-08 14:02:45,141 null map = 100%,  reduce = 0%
+2013-11-08 14:02:51,285 null map = 10%,  reduce = 0%
+2013-11-08 14:02:55,436 null map = 100%,  reduce = 0%
+2013-11-08 14:03:01,454 null map = 10%,  reduce = 0%
+2013-11-08 14:03:05,195 null map = 100%,  reduce = 0%
+2013-11-08 14:03:11,213 null map = 10%,  reduce = 0%
+2013-11-08 14:03:15,362 null map = 100%,  reduce = 0%
+2013-11-08 14:03:21,361 null map = 10%,  reduce = 0%
+2013-11-08 14:03:27,812 null map = 100%,  reduce = 0%
+2013-11-08 14:03:32,587 null map = 10%,  reduce = 0%
+2013-11-08 14:03:43,885 null map = 100%,  reduce = 0%
+2013-11-08 14:03:49,895 null map = 10%,  reduce = 0%
+2013-11-08 14:03:54,728 null map = 100%,  reduce = 0%
+2013-11-08 14:04:00,752 null map = 10%,  reduce = 0%
+2013-11-08 14:04:04,408 null map = 100%,  reduce = 0%
+2013-11-08 14:04:10,788 null map = 10%,  reduce = 0%
+2013-11-08 14:05:11,919 null map = 10%,  reduce = 0%
+2013-11-08 14:06:13,026 null map = 10%,  reduce = 0%
+2013-11-08 14:06:24,181 null map = 100%,  reduce = 0%
+2013-11-08 14:06:29,094 null map = 10%,  reduce = 0%
+2013-11-08 14:06:35,286 null map = 100%,  reduce = 0%
+2013-11-08 14:06:41,335 null map = 10%,  reduce = 0%
+2013-11-08 14:06:45,010 null map = 100%,  reduce = 0%
+2013-11-08 14:06:51,095 null map = 10%,  reduce = 0%
+2013-11-08 14:06:55,188 null map = 100%,  reduce = 0%
+2013-11-08 14:07:01,158 null map = 10%,  reduce = 0%
+2013-11-08 14:07:05,971 null map = 100%,  reduce = 0%
+2013-11-08 14:07:12,017 null map = 10%,  reduce = 0%
+2013-11-08 14:07:16,159 null map = 100%,  reduce = 0%
+2013-11-08 14:07:22,166 null map = 10%,  reduce = 0%
+2013-11-08 14:07:26,950 null map = 100%,  reduce = 0%
+2013-11-08 14:07:31,761 null map = 10%,  reduce = 0%
+2013-11-08 14:07:36,939 null map = 100%,  reduce = 0%
+2013-11-08 14:07:43,036 null map = 10%,  reduce = 0%
+2013-11-08 14:07:47,164 null map = 100%,  reduce = 0%
+2013-11-08 14:07:50,796 null map = 10%,  reduce = 0%
+2013-11-08 14:07:57,297 null map = 100%,  reduce = 0%
+2013-11-08 14:08:03,447 null map = 10%,  reduce = 0%
+2013-11-08 14:08:07,474 null map = 100%,  reduce = 0%
+2013-11-08 14:08:13,619 null map = 10%,  reduce = 0%
+2013-11-08 14:08:17,714 null map = 100%,  reduce = 0%
+2013-11-08 14:08:23,743 null map = 11%,  reduce = 0%
+2013-11-08 14:08:27,876 null map = 100%,  reduce = 0%
+2013-11-08 14:08:33,997 null map = 11%,  reduce = 0%
+2013-11-08 14:08:43,653 null map = 100%,  reduce = 0%
+2013-11-08 14:08:48,567 null map = 11%,  reduce = 0%
+2013-11-08 14:08:53,934 null map = 100%,  reduce = 0%
+2013-11-08 14:08:59,936 null map = 11%,  reduce = 0%
+2013-11-08 14:09:06,280 null map = 100%,  reduce = 0%
+2013-11-08 14:09:12,282 null map = 11%,  reduce = 0%
+2013-11-08 14:09:16,300 null map = 100%,  reduce = 0%
+2013-11-08 14:09:22,304 null map = 11%,  reduce = 0%
+2013-11-08 14:09:26,046 null map = 100%,  reduce = 0%
+2013-11-08 14:09:32,061 null map = 11%,  reduce = 0%
+2013-11-08 14:09:35,729 null map = 100%,  reduce = 0%
+2013-11-08 14:09:41,834 null map = 11%,  reduce = 0%
+2013-11-08 14:09:45,921 null map = 100%,  reduce = 0%
+2013-11-08 14:09:51,900 null map = 11%,  reduce = 0%
+2013-11-08 14:09:55,835 null map = 100%,  reduce = 0%
+2013-11-08 14:10:00,838 null map = 11%,  reduce = 0%
+2013-11-08 14:10:06,804 null map = 100%,  reduce = 0%
+2013-11-08 14:10:12,816 null map = 11%,  reduce = 0%
+2013-11-08 14:10:16,415 null map = 100%,  reduce = 0%
+2013-11-08 14:10:21,367 null map = 11%,  reduce = 0%
+2013-11-08 14:10:26,668 null map = 100%,  reduce = 0%
+2013-11-08 14:10:32,739 null map = 11%,  reduce = 0%
+2013-11-08 14:10:36,932 null map = 100%,  reduce = 0%
+2013-11-08 14:10:42,958 null map = 11%,  reduce = 0%
+2013-11-08 14:10:46,790 null map = 100%,  reduce = 0%
+2013-11-08 14:10:52,807 null map = 11%,  reduce = 0%
+2013-11-08 14:10:56,551 null map = 100%,  reduce = 0%
+2013-11-08 14:11:02,613 null map = 11%,  reduce = 0%
+2013-11-08 14:11:06,295 null map = 100%,  reduce = 0%
+2013-11-08 14:11:12,695 null map = 11%,  reduce = 0%
+2013-11-08 14:12:13,841 null map = 11%,  reduce = 0%
+2013-11-08 14:13:14,907 null map = 11%,  reduce = 0%
+2013-11-08 14:13:36,639 null map = 100%,  reduce = 0%
+2013-11-08 14:13:39,024 null map = 11%,  reduce = 0%
+2013-11-08 14:13:46,344 null map = 100%,  reduce = 0%
+2013-11-08 14:13:52,433 null map = 11%,  reduce = 0%
+2013-11-08 14:13:56,586 null map = 100%,  reduce = 0%
+2013-11-08 14:14:02,659 null map = 11%,  reduce = 0%
+2013-11-08 14:14:06,739 null map = 100%,  reduce = 0%
+2013-11-08 14:14:12,764 null map = 11%,  reduce = 0%
+2013-11-08 14:14:17,612 null map = 100%,  reduce = 0%
+2013-11-08 14:14:22,583 null map = 11%,  reduce = 0%
+2013-11-08 14:14:30,075 null map = 100%,  reduce = 0%
+2013-11-08 14:14:36,075 null map = 11%,  reduce = 0%
+2013-11-08 14:14:40,199 null map = 100%,  reduce = 0%
+2013-11-08 14:14:42,618 null map = 11%,  reduce = 0%
+2013-11-08 14:14:50,189 null map = 100%,  reduce = 0%
+2013-11-08 14:14:56,220 null map = 11%,  reduce = 0%
+2013-11-08 14:15:00,346 null map = 100%,  reduce = 0%
+2013-11-08 14:15:06,338 null map = 11%,  reduce = 0%
+2013-11-08 14:15:10,431 null map = 100%,  reduce = 0%
+2013-11-08 14:15:16,497 null map = 11%,  reduce = 0%
+2013-11-08 14:15:20,618 null map = 100%,  reduce = 0%
+2013-11-08 14:15:26,632 null map = 11%,  reduce = 0%
+2013-11-08 14:15:30,755 null map = 100%,  reduce = 0%
+2013-11-08 14:15:36,899 null map = 11%,  reduce = 0%
+2013-11-08 14:15:41,751 null map = 100%,  reduce = 0%
+2013-11-08 14:15:47,802 null map = 11%,  reduce = 0%
+2013-11-08 14:15:52,017 null map = 100%,  reduce = 0%
+2013-11-08 14:15:58,192 null map = 12%,  reduce = 0%
+2013-11-08 14:16:03,194 null map = 100%,  reduce = 0%
+2013-11-08 14:16:09,193 null map = 12%,  reduce = 0%
+2013-11-08 14:16:16,898 null map = 100%,  reduce = 0%
+2013-11-08 14:16:22,990 null map = 12%,  reduce = 0%
+2013-11-08 14:16:27,083 null map = 100%,  reduce = 0%
+2013-11-08 14:16:33,090 null map = 12%,  reduce = 0%
+2013-11-08 14:16:36,729 null map = 100%,  reduce = 0%
+2013-11-08 14:16:42,797 null map = 12%,  reduce = 0%
+2013-11-08 14:16:46,750 null map = 100%,  reduce = 0%
+2013-11-08 14:16:52,827 null map = 12%,  reduce = 0%
+2013-11-08 14:16:56,969 null map = 100%,  reduce = 0%
+2013-11-08 14:17:01,777 null map = 12%,  reduce = 0%
+2013-11-08 14:17:07,908 null map = 100%,  reduce = 0%
+2013-11-08 14:17:10,307 null map = 12%,  reduce = 0%
+2013-11-08 14:17:18,070 null map = 100%,  reduce = 0%
+2013-11-08 14:17:24,097 null map = 12%,  reduce = 0%
+2013-11-08 14:17:27,899 null map = 100%,  reduce = 0%
+2013-11-08 14:17:33,918 null map = 12%,  reduce = 0%
+2013-11-08 14:17:37,541 null map = 100%,  reduce = 0%
+2013-11-08 14:17:43,553 null map = 12%,  reduce = 0%
+2013-11-08 14:17:47,306 null map = 100%,  reduce = 0%
+2013-11-08 14:17:53,327 null map = 12%,  reduce = 0%
+2013-11-08 14:17:57,053 null map = 100%,  reduce = 0%
+2013-11-08 14:18:03,077 null map = 12%,  reduce = 0%
+2013-11-08 14:18:06,715 null map = 100%,  reduce = 0%
+2013-11-08 14:18:11,702 null map = 12%,  reduce = 0%
+2013-11-08 14:18:16,541 null map = 100%,  reduce = 0%
+2013-11-08 14:18:22,926 null map = 12%,  reduce = 0%
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+13/11/08 14:19:19 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/08 14:19:19 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/08 14:19:19 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/08 14:19:19 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/08 14:19:19 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/08 14:19:19 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/08 14:19:19 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 6.201 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.006 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.908 seconds
+OK
+Time taken: 0.039 seconds
+OK
+Time taken: 0.04 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.032 seconds
+OK
+Time taken: 0.108 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.059 seconds
+Running Hive query: tpch/q3_shipping_priority.hive
+Running Hive query: tpch/q4_order_priority.hive
+Running Hive query: tpch/q5_local_supplier_volume.hive
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+Running Hive query: tpch/q7_volume_shipping.hive
+Running Hive query: tpch/q8_national_market_share.hive
+Running Hive query: tpch/q9_product_type_profit.hive
+Running Hive query: tpch/q10_returned_item.hive
+Running Hive query: tpch/q11_important_stock.hive
+Running Hive query: tpch/q12_shipping.hive
+Running Hive query: tpch/q13_customer_distribution.hive
+Running Hive query: tpch/q14_promotion_effect.hive
+Running Hive query: tpch/q15_top_supplier.hive
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+Running Hive query: tpch/q18_large_volume_customer.hive
+Running Hive query: tpch/q19_discounted_revenue.hive
+Running Hive query: tpch/q20_potential_part_promotion.hive
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+Running Hive query: tpch/q22_global_sales_opportunity.hive

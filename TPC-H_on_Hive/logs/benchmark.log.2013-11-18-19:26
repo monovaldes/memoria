@@ -1,0 +1,708 @@
+Running Hive from /opt/hive-0.12.0
+Running Hadoop from 
+Running Hive query: tpch/q1_pricing_summary_report.hive
+13/11/18 19:21:19 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:21:19 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:21:19 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:21:19 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:21:19 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:21:19 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:21:19 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 5.902 seconds
+OK
+Time taken: 0.189 seconds
+OK
+Time taken: 0.192 seconds
+OK
+Time taken: 0.048 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 814
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384813220166_0001, Tracking URL = http://hadoop11/proxy/application_1384813220166_0001/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384813220166_0001
+Hadoop job information for Stage-1: number of mappers: 3032; number of reducers: 814
+2013-11-18 19:22:13,637 Stage-1 map = 0%,  reduce = 0%
+Ended Job = job_1384813220166_0001 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1384813220166_0001_m_000000 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000175 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000100 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000196 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000135 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000146 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000026 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000004 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000081 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000074 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000197 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000109 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000208 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000034 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000174 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000160 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000145 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000143 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000111 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000247 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000192 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000079 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000445 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000239 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000116 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000051 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000200 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000333 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000382 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000305 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000214 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000273 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000193 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000104 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000137 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000127 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000186 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000043 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000093 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000213 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000143 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000009 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000084 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000031 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000223 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000149 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000239 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000079 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000218 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000267 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000116 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000226 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000249 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000214 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000219 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000417 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000086 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000191 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000114 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000091 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000186 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000062 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000134 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000144 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000126 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000018 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000000 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000005 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000031 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000105 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000094 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000190 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000209 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000254 (and more) from job job_1384813220166_0001
+Examining task ID: task_1384813220166_0001_m_000275 (and more) from job job_1384813220166_0001
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1384813220166_0001_m_000128
+
+URL:
+  http://hadoop11:8088/taskdetails.jsp?jobid=job_1384813220166_0001&tipid=task_1384813220166_0001_m_000128
+-----
+Diagnostic Messages for this Task:
+Container [pid=8428,containerID=container_1384813220166_0001_01_000745] is running beyond virtual memory limits. Current usage: 19.1 MB of 1 GB physical memory used; 4.6 GB of 2.1 GB virtual memory used. Killing container.
+Dump of the process-tree for container_1384813220166_0001_01_000745 :
+	|- PID PPID PGRPID SESSID CMD_NAME USER_MODE_TIME(MILLIS) SYSTEM_TIME(MILLIS) VMEM_USAGE(BYTES) RSSMEM_USAGE(PAGES) FULL_CMD_LINE
+	|- 8438 8428 8428 8428 (java) 9 0 4957597696 4576 /usr/lib/jvm/java-7-openjdk/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4096M -Djava.io.tmpdir=/mnt/hadoopdata/yarn/usercache/hadoop/appcache/application_1384813220166_0001/container_1384813220166_0001_01_000745/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/mnt/hadoopdata/logs/application_1384813220166_0001/container_1384813220166_0001_01_000745 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA org.apache.hadoop.mapred.YarnChild 10.6.40.131 58199 attempt_1384813220166_0001_m_000128_3 745 
+	|- 8428 6462 8428 8428 (bash) 0 0 12062720 322 /bin/bash -c /usr/lib/jvm/java-7-openjdk/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN  -Xmx4096M -Djava.io.tmpdir=/mnt/hadoopdata/yarn/usercache/hadoop/appcache/application_1384813220166_0001/container_1384813220166_0001_01_000745/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/mnt/hadoopdata/logs/application_1384813220166_0001/container_1384813220166_0001_01_000745 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA org.apache.hadoop.mapred.YarnChild 10.6.40.131 58199 attempt_1384813220166_0001_m_000128_3 745 1>/mnt/hadoopdata/logs/application_1384813220166_0001/container_1384813220166_0001_01_000745/stdout 2>/mnt/hadoopdata/logs/application_1384813220166_0001/container_1384813220166_0001_01_000745/stderr  
+
+Container killed on request. Exit code is 143
+
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 3032  Reduce: 814   FAIL
+Total MapReduce CPU Time Spent: -1 msec
+Command exited with non-zero status 2
+Time:57.48
+Running Hive query: tpch/q2_minimum_cost_supplier.hive
+13/11/18 19:22:17 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:22:17 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:22:17 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:22:17 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:22:17 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:22:17 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:22:17 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 5.847 seconds
+OK
+Time taken: 0.099 seconds
+OK
+Time taken: 0.099 seconds
+OK
+Time taken: 0.091 seconds
+OK
+Time taken: 0.084 seconds
+OK
+Time taken: 0.201 seconds
+OK
+Time taken: 0.115 seconds
+OK
+Time taken: 0.124 seconds
+OK
+Time taken: 0.186 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.031 seconds
+OK
+Time taken: 0.025 seconds
+OK
+Time taken: 0.025 seconds
+OK
+Time taken: 0.085 seconds
+OK
+Time taken: 0.049 seconds
+OK
+Time taken: 0.04 seconds
+Total MapReduce jobs = 10
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+13/11/18 19:22:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+13/11/18 19:22:31 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-18_19-22-25_557_1995037048162654011-1/-local-10020/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+13/11/18 19:22:31 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-18_19-22-25_557_1995037048162654011-1/-local-10020/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+13/11/18 19:22:31 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:22:31 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:22:31 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:22:31 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:22:31 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:22:31 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:22:31 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+Execution log at: /tmp/hadoop/.log
+2013-11-18 07:22:31	Starting to launch local task to process map join;	maximum memory = 477102080
+2013-11-18 07:22:32	Dump the side-table into file: file:/tmp/hadoop/hive_2013-11-18_19-22-25_557_1995037048162654011-1/-local-10017/HashTable-Stage-18/MapJoin-mapfile61--.hashtable
+2013-11-18 07:22:32	Upload 1 File to: file:/tmp/hadoop/hive_2013-11-18_19-22-25_557_1995037048162654011-1/-local-10017/HashTable-Stage-18/MapJoin-mapfile61--.hashtable
+2013-11-18 07:22:32	End of local task; Time Taken: 0.799 sec.
+Execution completed successfully
+Mapred Local Task Succeeded . Convert the Join into MapJoin
+Mapred Local Task Succeeded . Convert the Join into MapJoin
+Launching Job 1 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1384813220166_0002, Tracking URL = http://hadoop11/proxy/application_1384813220166_0002/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384813220166_0002
+Hadoop job information for Stage-18: number of mappers: 1; number of reducers: 0
+2013-11-18 19:22:57,813 Stage-18 map = 0%,  reduce = 0%
+Ended Job = job_1384813220166_0002 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1384813220166_0002_m_000000 (and more) from job job_1384813220166_0002
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1384813220166_0002_m_000000
+
+URL:
+  http://hadoop11:8088/taskdetails.jsp?jobid=job_1384813220166_0002&tipid=task_1384813220166_0002_m_000000
+-----
+Diagnostic Messages for this Task:
+Container [pid=26804,containerID=container_1384813220166_0002_01_000005] is running beyond virtual memory limits. Current usage: 97.8 MB of 1 GB physical memory used; 4.7 GB of 2.1 GB virtual memory used. Killing container.
+Dump of the process-tree for container_1384813220166_0002_01_000005 :
+	|- PID PPID PGRPID SESSID CMD_NAME USER_MODE_TIME(MILLIS) SYSTEM_TIME(MILLIS) VMEM_USAGE(BYTES) RSSMEM_USAGE(PAGES) FULL_CMD_LINE
+	|- 26811 26804 26804 26804 (java) 290 8 5035962368 24716 /usr/lib/jvm/java-7-openjdk/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4096M -Djava.io.tmpdir=/mnt/hadoopdata/yarn/usercache/hadoop/appcache/application_1384813220166_0002/container_1384813220166_0002_01_000005/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/mnt/hadoopdata/logs/application_1384813220166_0002/container_1384813220166_0002_01_000005 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA org.apache.hadoop.mapred.YarnChild 10.6.40.116 45827 attempt_1384813220166_0002_m_000000_3 5 
+	|- 26804 24666 26804 26804 (bash) 0 0 12062720 323 /bin/bash -c /usr/lib/jvm/java-7-openjdk/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN  -Xmx4096M -Djava.io.tmpdir=/mnt/hadoopdata/yarn/usercache/hadoop/appcache/application_1384813220166_0002/container_1384813220166_0002_01_000005/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/mnt/hadoopdata/logs/application_1384813220166_0002/container_1384813220166_0002_01_000005 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA org.apache.hadoop.mapred.YarnChild 10.6.40.116 45827 attempt_1384813220166_0002_m_000000_3 5 1>/mnt/hadoopdata/logs/application_1384813220166_0002/container_1384813220166_0002_01_000005/stdout 2>/mnt/hadoopdata/logs/application_1384813220166_0002/container_1384813220166_0002_01_000005/stderr  
+
+Container killed on request. Exit code is 143
+
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 1   FAIL
+Total MapReduce CPU Time Spent: -1 msec
+Command exited with non-zero status 2
+Time:41.64
+Running Hive query: tpch/q3_shipping_priority.hive
+13/11/18 19:22:59 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:22:59 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:22:59 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:22:59 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:22:59 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:22:59 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:22:59 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 5.854 seconds
+OK
+Time taken: 0.095 seconds
+OK
+Time taken: 0.1 seconds
+OK
+Time taken: 0.185 seconds
+OK
+Time taken: 0.222 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.049 seconds
+Total MapReduce jobs = 6
+Stage-1 is selected by condition resolver.
+Launching Job 1 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 201
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384813220166_0003, Tracking URL = http://hadoop11/proxy/application_1384813220166_0003/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384813220166_0003
+Hadoop job information for Stage-1: number of mappers: 768; number of reducers: 201
+2013-11-18 19:23:47,040 Stage-1 map = 0%,  reduce = 0%
+Ended Job = job_1384813220166_0003 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1384813220166_0003_m_000054 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000044 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000146 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000127 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000011 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000120 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000036 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000210 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000009 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000185 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000020 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000112 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000161 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000106 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000359 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000076 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000119 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000200 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000255 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000125 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000167 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000031 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000398 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000186 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000387 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000054 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000219 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000355 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000272 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000230 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000099 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000411 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000045 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000026 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000087 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000025 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000117 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000006 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000009 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000064 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000081 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000048 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000217 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000061 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000094 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000331 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000195 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000123 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000239 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000155 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000084 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000152 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000238 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000314 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000204 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000180 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000272 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000099 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000232 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000016 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000344 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000138 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000074 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000137 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000165 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000168 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000046 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000210 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000150 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000065 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000019 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000139 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000198 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000077 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000211 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000076 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000085 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000002 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000092 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000108 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000164 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000181 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000216 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000239 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000398 (and more) from job job_1384813220166_0003
+Examining task ID: task_1384813220166_0003_m_000426 (and more) from job job_1384813220166_0003
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1384813220166_0003_m_000191
+
+URL:
+  http://hadoop11:8088/taskdetails.jsp?jobid=job_1384813220166_0003&tipid=task_1384813220166_0003_m_000191
+-----
+Diagnostic Messages for this Task:
+
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 768  Reduce: 201   FAIL
+Total MapReduce CPU Time Spent: -1 msec
+Command exited with non-zero status 2
+Time:51.62
+Running Hive query: tpch/q4_order_priority.hive
+13/11/18 19:23:50 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:23:50 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:23:50 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:23:50 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:23:50 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:23:50 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:23:50 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 5.994 seconds
+OK
+Time taken: 0.104 seconds
+OK
+Time taken: 0.175 seconds
+OK
+Time taken: 0.131 seconds
+OK
+Time taken: 0.175 seconds
+OK
+Time taken: 0.053 seconds
+OK
+Time taken: 0.038 seconds
+OK
+Time taken: 0.043 seconds
+Total MapReduce jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 814
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384813220166_0004, Tracking URL = http://hadoop11/proxy/application_1384813220166_0004/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384813220166_0004
+Hadoop job information for Stage-1: number of mappers: 3032; number of reducers: 814
+2013-11-18 19:24:42,894 Stage-1 map = 0%,  reduce = 0%
+Ended Job = job_1384813220166_0004 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1384813220166_0004_m_000068 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000018 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000102 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000104 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000040 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000049 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000184 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000078 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000107 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000149 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000143 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000090 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000115 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000190 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000006 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000042 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000101 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000200 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000025 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000109 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000172 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000272 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000224 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000267 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000027 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000197 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000410 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000246 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000397 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000188 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000180 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000292 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000385 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000357 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000085 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000133 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000013 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000184 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000344 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000107 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000189 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000155 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000198 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000140 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000148 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000032 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000030 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000086 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000128 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000203 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000326 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000242 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000109 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000119 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000213 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000268 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000044 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000261 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000387 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000274 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000229 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000415 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000158 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000186 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000207 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000376 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000033 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000018 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000087 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000117 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000124 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000057 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000127 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000107 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000177 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000168 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000171 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000148 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000022 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000101 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000091 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000075 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000167 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000224 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000384 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000369 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000438 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000109 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000169 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000012 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000074 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000147 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000240 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000180 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000273 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000303 (and more) from job job_1384813220166_0004
+Examining task ID: task_1384813220166_0004_m_000263 (and more) from job job_1384813220166_0004
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1384813220166_0004_m_000180
+
+URL:
+  http://hadoop11:8088/taskdetails.jsp?jobid=job_1384813220166_0004&tipid=task_1384813220166_0004_m_000180
+-----
+Diagnostic Messages for this Task:
+
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 3032  Reduce: 814   FAIL
+Total MapReduce CPU Time Spent: -1 msec
+Command exited with non-zero status 2
+Time:55.98
+Running Hive query: tpch/q5_local_supplier_volume.hive
+13/11/18 19:24:46 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:24:46 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:24:46 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:24:46 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:24:46 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:24:46 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:24:46 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 5.941 seconds
+OK
+Time taken: 0.116 seconds
+OK
+Time taken: 0.116 seconds
+OK
+Time taken: 0.099 seconds
+OK
+Time taken: 0.117 seconds
+OK
+Time taken: 0.099 seconds
+OK
+Time taken: 0.169 seconds
+OK
+Time taken: 0.193 seconds
+OK
+Time taken: 0.039 seconds
+OK
+Time taken: 0.044 seconds
+OK
+Time taken: 0.036 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.074 seconds
+OK
+Time taken: 0.092 seconds
+Total MapReduce jobs = 15
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+13/11/18 19:25:01 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+13/11/18 19:25:01 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-18_19-24-54_841_374464147929805889-1/-local-10027/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+13/11/18 19:25:01 WARN conf.Configuration: file:/tmp/hadoop/hive_2013-11-18_19-24-54_841_374464147929805889-1/-local-10027/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+13/11/18 19:25:01 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:25:01 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:25:01 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:25:01 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:25:01 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:25:01 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:25:01 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+Execution log at: /tmp/hadoop/.log
+2013-11-18 07:25:02	Starting to launch local task to process map join;	maximum memory = 477102080
+2013-11-18 07:25:03	Dump the side-table into file: file:/tmp/hadoop/hive_2013-11-18_19-24-54_841_374464147929805889-1/-local-10024/HashTable-Stage-25/MapJoin-mapfile81--.hashtable
+2013-11-18 07:25:03	Upload 1 File to: file:/tmp/hadoop/hive_2013-11-18_19-24-54_841_374464147929805889-1/-local-10024/HashTable-Stage-25/MapJoin-mapfile81--.hashtable
+2013-11-18 07:25:03	End of local task; Time Taken: 0.795 sec.
+Execution completed successfully
+Mapred Local Task Succeeded . Convert the Join into MapJoin
+Mapred Local Task Succeeded . Convert the Join into MapJoin
+Launching Job 1 out of 15
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1384813220166_0005, Tracking URL = http://hadoop11/proxy/application_1384813220166_0005/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384813220166_0005
+Hadoop job information for Stage-25: number of mappers: 1; number of reducers: 0
+2013-11-18 19:25:25,213 Stage-25 map = 0%,  reduce = 0%
+Ended Job = job_1384813220166_0005 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1384813220166_0005_m_000000 (and more) from job job_1384813220166_0005
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1384813220166_0005_m_000000
+
+URL:
+  http://hadoop11:8088/taskdetails.jsp?jobid=job_1384813220166_0005&tipid=task_1384813220166_0005_m_000000
+-----
+Diagnostic Messages for this Task:
+Container [pid=3553,containerID=container_1384813220166_0005_01_000005] is running beyond virtual memory limits. Current usage: 148.8 MB of 1 GB physical memory used; 4.7 GB of 2.1 GB virtual memory used. Killing container.
+Dump of the process-tree for container_1384813220166_0005_01_000005 :
+	|- PID PPID PGRPID SESSID CMD_NAME USER_MODE_TIME(MILLIS) SYSTEM_TIME(MILLIS) VMEM_USAGE(BYTES) RSSMEM_USAGE(PAGES) FULL_CMD_LINE
+	|- 3560 3553 3553 3553 (java) 443 16 5032951808 37758 /usr/lib/jvm/java-7-openjdk/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx4096M -Djava.io.tmpdir=/mnt/hadoopdata/yarn/usercache/hadoop/appcache/application_1384813220166_0005/container_1384813220166_0005_01_000005/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/mnt/hadoopdata/logs/application_1384813220166_0005/container_1384813220166_0005_01_000005 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA org.apache.hadoop.mapred.YarnChild 10.6.40.127 58439 attempt_1384813220166_0005_m_000000_3 5 
+	|- 3553 29648 3553 3553 (bash) 1 0 12062720 322 /bin/bash -c /usr/lib/jvm/java-7-openjdk/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN  -Xmx4096M -Djava.io.tmpdir=/mnt/hadoopdata/yarn/usercache/hadoop/appcache/application_1384813220166_0005/container_1384813220166_0005_01_000005/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/mnt/hadoopdata/logs/application_1384813220166_0005/container_1384813220166_0005_01_000005 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA org.apache.hadoop.mapred.YarnChild 10.6.40.127 58439 attempt_1384813220166_0005_m_000000_3 5 1>/mnt/hadoopdata/logs/application_1384813220166_0005/container_1384813220166_0005_01_000005/stdout 2>/mnt/hadoopdata/logs/application_1384813220166_0005/container_1384813220166_0005_01_000005/stderr  
+
+Container killed on request. Exit code is 143
+
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+MapReduce Jobs Launched: 
+Job 0: Map: 1   FAIL
+Total MapReduce CPU Time Spent: -1 msec
+Command exited with non-zero status 2
+Time:39.77
+Running Hive query: tpch/q6_forecast_revenue_change.hive
+13/11/18 19:25:26 INFO Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+13/11/18 19:25:26 INFO Configuration.deprecation: mapred.max.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.maxsize
+13/11/18 19:25:26 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+13/11/18 19:25:26 INFO Configuration.deprecation: mapred.min.split.size.per.rack is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.rack
+13/11/18 19:25:26 INFO Configuration.deprecation: mapred.min.split.size.per.node is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize.per.node
+13/11/18 19:25:26 INFO Configuration.deprecation: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+13/11/18 19:25:26 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+
+Logging initialized using configuration in jar:file:/opt/hive-0.12.0/lib/hive-common-0.12.0.jar!/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop-2.2.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hive-0.12.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 5.875 seconds
+OK
+Time taken: 0.191 seconds
+OK
+Time taken: 0.181 seconds
+OK
+Time taken: 0.05 seconds
+Total MapReduce jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_1384813220166_0006, Tracking URL = http://hadoop11/proxy/application_1384813220166_0006/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1384813220166_0006
+Running Hive query: tpch/q7_volume_shipping.hive
+Running Hive query: tpch/q8_national_market_share.hive
+Running Hive query: tpch/q9_product_type_profit.hive
+Running Hive query: tpch/q10_returned_item.hive
+Running Hive query: tpch/q11_important_stock.hive
+Running Hive query: tpch/q12_shipping.hive
+Running Hive query: tpch/q13_customer_distribution.hive
+Running Hive query: tpch/q14_promotion_effect.hive
+Running Hive query: tpch/q15_top_supplier.hive
+Running Hive query: tpch/q16_parts_supplier_relationship.hive
+Running Hive query: tpch/q17_small_quantity_order_revenue.hive
+Running Hive query: tpch/q18_large_volume_customer.hive
+Running Hive query: tpch/q19_discounted_revenue.hive
+Running Hive query: tpch/q20_potential_part_promotion.hive
+Running Hive query: tpch/q21_suppliers_who_kept_orders_waiting.hive
+Running Hive query: tpch/q22_global_sales_opportunity.hive
